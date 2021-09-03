@@ -25,8 +25,7 @@ public class TestngListener implements IReporter {
 
     //获取当前时间，生成报告
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
-    String date=dateFormat.format(new Date());
-    private  final String FILE_NAME = date +"-report.html";
+    private  final String FILE_NAME = "index-report.html";
 
     private ExtentReports extent;
 
