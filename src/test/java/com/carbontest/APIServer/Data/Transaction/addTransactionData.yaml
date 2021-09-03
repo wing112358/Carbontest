@@ -1,0 +1,16 @@
+addtransactionnormal:
+  expectedresult: 操作成功
+  params:
+    amount: 11
+    buyerName: '服务商公司0000'
+    price: 11
+    contract: 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1630638528909/%E3%80%90%E9%80%B8%E4%B9%98%E5%87%BA%E8%A1%8C-63.99%E5%85%83-1%E4%B8%AA%E8%A1%8C%E7%A8%8B%E3%80%91%E9%AB%98%E5%BE%B7%E6%89%93%E8%BD%A6%E7%94%B5%E5%AD%90%E8%A1%8C%E7%A8%8B%E5%8D%95.pdf'
+    owner: '新增公司0001'
+    projectName: '新增项目001'
+    projectId: 152
+    quantity: 1
+
+
+
+
+

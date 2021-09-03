@@ -1,0 +1,28 @@
+ccerapplynormal:
+  expectedresult: 操作成功
+  params:
+    id: 171
+    approveUser: '审核人admin'
+    approveResult: 1
+    approveRemark: '审核CCER通过'
+    applicationIssuance: 23
+irecapplynormal:
+  expectedresult: 操作成功
+  params:
+    id: 172
+    approveUser: '审核人admin'
+    approveResult: 1
+    approveRemark: '审核IREC通过'
+    applicationIssuance: 11
+tphapplynormal:
+  expectedresult: 操作成功
+  params:
+    id: 173
+    approveUser: '审核人admin'
+    approveResult: 1
+    approveRemark: '审核碳普惠通过'
+    applicationIssuance: 34
+
+
+
+

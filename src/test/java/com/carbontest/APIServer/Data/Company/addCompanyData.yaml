@@ -1,0 +1,30 @@
+addcompanyrnormal:
+  expectedresult: 操作成功
+  params:
+    address: '日落大道0001'
+    businessLicense: 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1627366715691/5MB%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%9B%BE%E7%89%87.jpg'
+    companyName: '新增公司0001'
+    contact: '8008208820'
+    legalPerson: '法人0001'
+    legalPersonIdCard: '340828199401076725'
+    mail: 'test@qq.com'
+    phone: '19155608659'
+    servicerId: '183331815631757312'
+    socialCreditCode: 'creditcode00000001'
+addcompanyerror:
+  expectedresult: 操作成功
+  params:
+    address: '日落大道0001'
+    businessLicense: 'BSL000001'
+    companyName: '新增公司0001'
+    contact: '8008208820'
+    legalPerson: '法人0001'
+    legalPersonIdCard: '340828199401076725'
+    mail: 'test@qq.com'
+    phone: '19155608659'
+    servicerId: 1472580001
+    socialCreditCode: '2583690001'
+
+
+
+

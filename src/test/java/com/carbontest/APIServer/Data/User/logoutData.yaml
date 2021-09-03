@@ -1,0 +1,16 @@
+regiesternormal:
+  expectedresult: 操作成功
+  params:
+    username: '17826830021'
+    code: '1234'
+    password: '123456'
+regiestererror:
+  expectedresult: 操作成功
+  params:
+    username: '17826830021'
+    code: '1234'
+    password: '123456'
+
+
+
+

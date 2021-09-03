@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.carbontest.APIServer.dao.carbon.TCompanyDao">
+
+    <resultMap id="BaseResultMap" type="com.carbontest.APIServer.entity.TCompany">
+        <!--@Table t_company-->
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="userId" column="user_id" jdbcType="INTEGER"/>
+        <result property="businessId" column="business_id" jdbcType="VARCHAR"/>
+        <result property="companyName" column="company_name" jdbcType="VARCHAR"/>
+        <result property="socialCreditCode" column="social_credit_code" jdbcType="VARCHAR"/>
+        <result property="address" column="address" jdbcType="VARCHAR"/>
+        <result property="legalPerson" column="legal_person" jdbcType="VARCHAR"/>
+        <result property="legalPersonIdCard" column="legal_person_id_card" jdbcType="VARCHAR"/>
+        <result property="mail" column="mail" jdbcType="VARCHAR"/>
+        <result property="contact" column="contact" jdbcType="VARCHAR"/>
+        <result property="phone" column="phone" jdbcType="VARCHAR"/>
+        <result property="businessLicense" column="business_license" jdbcType="VARCHAR"/>
+        <result property="status" column="status" jdbcType="OTHER"/>
+        <result property="ratio" column="ratio" jdbcType="INTEGER"/>
+        <result property="type" column="type" jdbcType="INTEGER"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          id, user_id, business_id, company_name, social_credit_code, address, legal_person, legal_person_id_card, mail, contact, phone, business_license, status, create_time, update_time
+        from carbon_test.t_company
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          id, user_id, business_id, company_name, social_credit_code, address, legal_person, legal_person_id_card, mail, contact, phone, business_license, status, create_time, update_time
+        from carbon_test.t_company
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          id, user_id, business_id, company_name, social_credit_code, address, legal_person, legal_person_id_card, mail, contact, phone, business_license, status, create_time, update_time
+        from carbon_test.t_company
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+            <if test="businessId != null and businessId != ''">
+                and business_id = #{businessId}
+            </if>
+            <if test="companyName != null and companyName != ''">
+                and company_name = #{companyName}
+            </if>
+            <if test="socialCreditCode != null and socialCreditCode != ''">
+                and social_credit_code = #{socialCreditCode}
+            </if>
+            <if test="address != null and address != ''">
+                and address = #{address}
+            </if>
+            <if test="legalPerson != null and legalPerson != ''">
+                and legal_person = #{legalPerson}
+            </if>
+            <if test="legalPersonIdCard != null and legalPersonIdCard != ''">
+                and legal_person_id_card = #{legalPersonIdCard}
+            </if>
+            <if test="mail != null and mail != ''">
+                and mail = #{mail}
+            </if>
+            <if test="contact != null and contact != ''">
+                and contact = #{contact}
+            </if>
+            <if test="phone != null and phone != ''">
+                and phone = #{phone}
+            </if>
+            <if test="businessLicense != null and businessLicense != ''">
+                and business_license = #{businessLicense}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="updateTime != null">
+                and update_time = #{updateTime}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into carbon_test.t_company(user_id, business_id, company_name, social_credit_code, address, legal_person, legal_person_id_card, mail, contact, phone, business_license, status, create_time, update_time)
+        values (#{userId}, #{businessId}, #{companyName}, #{socialCreditCode}, #{address}, #{legalPerson}, #{legalPersonIdCard}, #{mail}, #{contact}, #{phone}, #{businessLicense}, #{status}, #{createTime}, #{updateTime})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update carbon_test.t_company
+        <set>
+            <if test="ratio != null">
+                ratio = #{ratio},
+            </if>
+            <if test="type != null">
+                type = #{type},
+            </if>
+            <if test="status != null">
+                status = #{status},
+            </if>
+
+        </set>
+        where user_id = #{userId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from carbon_test.t_company where id = #{id}
+    </delete>
+
+    <!--通过用户id删除-->
+    <delete id="deleteByUserId">
+        delete from carbon_test.t_company where user_id = #{userId}
+    </delete>
+
+</mapper>

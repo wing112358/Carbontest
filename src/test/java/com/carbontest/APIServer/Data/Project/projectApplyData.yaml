@@ -1,0 +1,51 @@
+projectapply1normal:
+  expectedresult: 操作成功
+  params:
+    address: '北京市东城区灯笼库胡同/南池子大街(路口)'
+    assetAccessories: 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1629881038617/Python%E6%8E%A5%E5%8F%A3%E6%B5%8B%E6%95%99%E7%A8%8B-%E5%88%86%E8%8A%82%E7%89%88.pdf'
+    companyId: 101
+    estimatedTotal: 50
+    methodology: 0
+    periodTimeEnd: '2022-08-25 23:59:59'
+    periodTimeStart: '2021-08-11 00:00:00'
+    projectAccessories: 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1629881169589/Python%E6%8E%A5%E5%8F%A3%E6%B5%8B%E6%95%99%E7%A8%8B-%E5%88%86%E8%8A%82%E7%89%88.pdf'
+    projectArea: '116.409449,39.918594'
+    projectBrief: '新增项目001的描述内容'
+    projectFiles: 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1629881038617/Python%E6%8E%A5%E5%8F%A3%E6%B5%8B%E6%95%99%E7%A8%8B-%E5%88%86%E8%8A%82%E7%89%88.pdf'
+    projectName: '新增项目001'
+    projectType: 0
+    validationFiles: 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1629881038617/Python%E6%8E%A5%E5%8F%A3%E6%B5%8B%E6%95%99%E7%A8%8B-%E5%88%86%E8%8A%82%E7%89%88.pdf'
+projectapply2normal:
+  expectedresult: 操作成功
+  params:
+    address: '北京市东城区灯笼库胡同/南池子大街(路口)'
+    assetAccessories: 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1629881038617/Python%E6%8E%A5%E5%8F%A3%E6%B5%8B%E6%95%99%E7%A8%8B-%E5%88%86%E8%8A%82%E7%89%88.pdf'
+    companyId: 101
+    estimatedTotal: 50
+    methodology: 10
+    periodTimeEnd: '2022-08-25 23:59:59'
+    periodTimeStart: '2021-08-11 00:00:00'
+    projectAccessories: 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1629881169589/Python%E6%8E%A5%E5%8F%A3%E6%B5%8B%E6%95%99%E7%A8%8B-%E5%88%86%E8%8A%82%E7%89%88.pdf'
+    projectArea: '116.409449,39.918594'
+    projectBrief: '新增项目002的描述内容'
+    projectFiles: 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1629881038617/Python%E6%8E%A5%E5%8F%A3%E6%B5%8B%E6%95%99%E7%A8%8B-%E5%88%86%E8%8A%82%E7%89%88.pdf'
+    projectName: '新增项目002'
+    projectType: 1
+    validationFiles: 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1629881038617/Python%E6%8E%A5%E5%8F%A3%E6%B5%8B%E6%95%99%E7%A8%8B-%E5%88%86%E8%8A%82%E7%89%88.pdf'
+projectapply3normal:
+  expectedresult: 操作成功
+  params:
+    address: '北京市东城区天安门站派出所'
+    assetAccessories: 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1629881038617/Python%E6%8E%A5%E5%8F%A3%E6%B5%8B%E6%95%99%E7%A8%8B-%E5%88%86%E8%8A%82%E7%89%88.pdf'
+    companyId: 101
+    contract: 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1629963720014/Python%E6%8E%A5%E5%8F%A3%E6%B5%8B%E6%95%99%E7%A8%8B-%E5%88%86%E8%8A%82%E7%89%88.pdf'
+    declarationFile: 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1629963720014/Python%E6%8E%A5%E5%8F%A3%E6%B5%8B%E6%95%99%E7%A8%8B-%E5%88%86%E8%8A%82%E7%89%88.pdf'
+    electricityFile: 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1629963720014/Python%E6%8E%A5%E5%8F%A3%E6%B5%8B%E6%95%99%E7%A8%8B-%E5%88%86%E8%8A%82%E7%89%88.pdf'
+    estimatedTotal: 100
+    picture: 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1629963720014/Python%E6%8E%A5%E5%8F%A3%E6%B5%8B%E6%95%99%E7%A8%8B-%E5%88%86%E8%8A%82%E7%89%88.pdf'
+    projectArea: '116.410584,39.917337'
+    projectBrief: '新增项目003的描述内容'
+    projectConnectionTime: '2021-08-13'
+    projectName: '新增项目003'
+    projectType: 2
+    wiringDiagram: 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1629963720014/Python%E6%8E%A5%E5%8F%A3%E6%B5%8B%E6%95%99%E7%A8%8B-%E5%88%86%E8%8A%82%E7%89%88.pdf'

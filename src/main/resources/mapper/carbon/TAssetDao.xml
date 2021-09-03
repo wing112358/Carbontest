@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.carbontest.APIServer.dao.carbon.TAssetDao">
+
+    <resultMap id="BaseResultMap" type="com.carbontest.APIServer.entity.TAsset">
+        <!--@Table t_asset-->
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="projectId" column="project_id" jdbcType="INTEGER"/>
+        <result property="businessId" column="business_id" jdbcType="VARCHAR"/>
+        <result property="serialNumber" column="serial_number" jdbcType="INTEGER"/>
+        <result property="companyName" column="company_name" jdbcType="VARCHAR"/>
+        <result property="projectType" column="project_type" jdbcType="INTEGER"/>
+        <result property="sourceAssets" column="source_assets" jdbcType="INTEGER"/>
+        <result property="quantity" column="quantity" jdbcType="INTEGER"/>
+        <result property="price" column="price" jdbcType="NUMERIC"/>
+        <result property="status" column="status" jdbcType="INTEGER"/>
+        <result property="monitoringFiles" column="monitoring_files" jdbcType="VARCHAR"/>
+        <result property="verificationFile" column="verification_file" jdbcType="VARCHAR"/>
+        <result property="issuancePeriodTimeStart" column="issuance_period_time_start" jdbcType="TIMESTAMP"/>
+        <result property="issuancePeriodTimeEnd" column="issuance_period_time_end" jdbcType="TIMESTAMP"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+        <result property="mrHash" column="mr_hash" jdbcType="VARCHAR"/>
+        <result property="accessories" column="accessories" jdbcType="VARCHAR"/>
+        <result property="chainStatus" column="chain_status" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          id, project_id, business_id, serial_number, company_name, project_type, source_assets, quantity, price, status, monitoring_files, verification_file, issuance_period_time_start, issuance_period_time_end, create_time, update_time, mr_hash, accessories, chain_status
+        from carbon_test.t_asset
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          id, project_id, business_id, serial_number, company_name, project_type, source_assets, quantity, price, status, monitoring_files, verification_file, issuance_period_time_start, issuance_period_time_end, create_time, update_time, mr_hash, accessories, chain_status
+        from carbon_test.t_asset
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          id, project_id, business_id, serial_number, company_name, project_type, source_assets, quantity, price, status, monitoring_files, verification_file, issuance_period_time_start, issuance_period_time_end, create_time, update_time, mr_hash, accessories, chain_status
+        from carbon_test.t_asset
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="projectId != null">
+                and project_id = #{projectId}
+            </if>
+            <if test="businessId != null and businessId != ''">
+                and business_id = #{businessId}
+            </if>
+            <if test="serialNumber != null">
+                and serial_number = #{serialNumber}
+            </if>
+            <if test="companyName != null and companyName != ''">
+                and company_name = #{companyName}
+            </if>
+            <if test="projectType != null">
+                and project_type = #{projectType}
+            </if>
+            <if test="sourceAssets != null">
+                and source_assets = #{sourceAssets}
+            </if>
+            <if test="quantity != null">
+                and quantity = #{quantity}
+            </if>
+            <if test="price != null">
+                and price = #{price}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+            <if test="monitoringFiles != null and monitoringFiles != ''">
+                and monitoring_files = #{monitoringFiles}
+            </if>
+            <if test="verificationFile != null and verificationFile != ''">
+                and verification_file = #{verificationFile}
+            </if>
+            <if test="issuancePeriodTimeStart != null">
+                and issuance_period_time_start = #{issuancePeriodTimeStart}
+            </if>
+            <if test="issuancePeriodTimeEnd != null">
+                and issuance_period_time_end = #{issuancePeriodTimeEnd}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="updateTime != null">
+                and update_time = #{updateTime}
+            </if>
+            <if test="mrHash != null and mrHash != ''">
+                and mr_hash = #{mrHash}
+            </if>
+            <if test="accessories != null and accessories != ''">
+                and accessories = #{accessories}
+            </if>
+            <if test="chainStatus != null">
+                and chain_status = #{chainStatus}
+            </if>
+        </where>
+        Limit 1
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAllList" resultMap="BaseResultMap">
+        select
+        id, project_id, business_id, serial_number, company_name, project_type, source_assets, quantity, price, status, monitoring_files, verification_file, issuance_period_time_start, issuance_period_time_end, create_time, update_time, mr_hash, accessories, chain_status
+        from carbon_test.t_asset
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="projectId != null">
+                and project_id = #{projectId}
+            </if>
+            <if test="businessId != null and businessId != ''">
+                and business_id = #{businessId}
+            </if>
+            <if test="serialNumber != null">
+                and serial_number = #{serialNumber}
+            </if>
+            <if test="companyName != null and companyName != ''">
+                and company_name = #{companyName}
+            </if>
+            <if test="projectType != null">
+                and project_type = #{projectType}
+            </if>
+            <if test="sourceAssets != null">
+                and source_assets = #{sourceAssets}
+            </if>
+            <if test="quantity != null">
+                and quantity = #{quantity}
+            </if>
+            <if test="price != null">
+                and price = #{price}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+            <if test="monitoringFiles != null and monitoringFiles != ''">
+                and monitoring_files = #{monitoringFiles}
+            </if>
+            <if test="verificationFile != null and verificationFile != ''">
+                and verification_file = #{verificationFile}
+            </if>
+            <if test="issuancePeriodTimeStart != null">
+                and issuance_period_time_start = #{issuancePeriodTimeStart}
+            </if>
+            <if test="issuancePeriodTimeEnd != null">
+                and issuance_period_time_end = #{issuancePeriodTimeEnd}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="updateTime != null">
+                and update_time = #{updateTime}
+            </if>
+            <if test="mrHash != null and mrHash != ''">
+                and mr_hash = #{mrHash}
+            </if>
+            <if test="accessories != null and accessories != ''">
+                and accessories = #{accessories}
+            </if>
+            <if test="chainStatus != null">
+                and chain_status = #{chainStatus}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into carbon_test.t_asset(project_id, business_id, serial_number, company_name, project_type, source_assets, quantity, price, status, monitoring_files, verification_file, issuance_period_time_start, issuance_period_time_end, create_time, update_time, mr_hash, accessories, chain_status)
+        values (#{projectId}, #{businessId}, #{serialNumber}, #{companyName}, #{projectType}, #{sourceAssets}, #{quantity}, #{price}, #{status}, #{monitoringFiles}, #{verificationFile}, #{issuancePeriodTimeStart}, #{issuancePeriodTimeEnd}, #{createTime}, #{updateTime}, #{mrHash}, #{accessories}, #{chainStatus})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update carbon_test.t_asset
+        <set>
+            <if test="projectId != null">
+                project_id = #{projectId},
+            </if>
+            <if test="businessId != null and businessId != ''">
+                business_id = #{businessId},
+            </if>
+            <if test="serialNumber != null">
+                serial_number = #{serialNumber},
+            </if>
+            <if test="companyName != null and companyName != ''">
+                company_name = #{companyName},
+            </if>
+            <if test="projectType != null">
+                project_type = #{projectType},
+            </if>
+            <if test="sourceAssets != null">
+                source_assets = #{sourceAssets},
+            </if>
+            <if test="quantity != null">
+                quantity = #{quantity},
+            </if>
+            <if test="price != null">
+                price = #{price},
+            </if>
+            <if test="status != null">
+                status = #{status},
+            </if>
+            <if test="monitoringFiles != null and monitoringFiles != ''">
+                monitoring_files = #{monitoringFiles},
+            </if>
+            <if test="verificationFile != null and verificationFile != ''">
+                verification_file = #{verificationFile},
+            </if>
+            <if test="issuancePeriodTimeStart != null">
+                issuance_period_time_start = #{issuancePeriodTimeStart},
+            </if>
+            <if test="issuancePeriodTimeEnd != null">
+                issuance_period_time_end = #{issuancePeriodTimeEnd},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+            <if test="mrHash != null and mrHash != ''">
+                mr_hash = #{mrHash},
+            </if>
+            <if test="accessories != null and accessories != ''">
+                accessories = #{accessories},
+            </if>
+            <if test="chainStatus != null">
+                chain_status = #{chainStatus},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from carbon_test.t_asset where id = #{id}
+    </delete>
+
+</mapper>

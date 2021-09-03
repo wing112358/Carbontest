@@ -1,0 +1,34 @@
+ccerapplynormal:
+  expectedresult: 操作成功
+  params:
+    applicationIssuance: 23
+    assetAccessories: 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1630402093589/chromedriver_win32.zip'
+    id: 109
+    issuancePeriodTimeEnd : '2021-08-28 23:59:59'
+    issuancePeriodTimeStart : '2021-08-20 00:00:00'
+    monitoringFiles : 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1630402082477/06100729105739013121.xls'
+    verificationFile : 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1630402082477/06100729105739013121.xls'
+irecapplynormal:
+  expectedresult: 操作成功
+  params:
+    applicationIssuance: 11
+    id: 110
+    issuancePeriodTimeEnd : '2021-09-16 23:59:59'
+    issuancePeriodTimeStart : '2021-08-18 00:00:00'
+    calculationFile : 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1630402850972/06100729105739013121.xls'
+    electricityFile : 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1630402850972/06100729105739013121.xls'
+tphapplynormal:
+  expectedresult: 操作成功
+  params:
+    applicationIssuance: 34
+    assetAccessories: 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1630402093589/chromedriver_win32.zip'
+    id: 111
+    issuancePeriodTimeEnd : '2021-08-28 23:59:59'
+    issuancePeriodTimeStart : '2021-08-20 00:00:00'
+    monitoringFiles : 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1630402082477/06100729105739013121.xls'
+    verificationFile : 'https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1630402082477/06100729105739013121.xls'
+
+
+
+
+

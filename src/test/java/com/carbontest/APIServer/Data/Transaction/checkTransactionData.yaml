@@ -1,0 +1,12 @@
+checktransactionnormal:
+  expectedresult: 操作成功
+  params:
+    approveRemark: '管理员审核通过'
+    approveResult: 1
+    approveUser: '某一个不知名的审核人'
+    id: 152
+
+
+
+
+

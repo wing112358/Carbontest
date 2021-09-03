@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.carbontest.APIServer.dao.carbon.TProjectCcerDao">
+
+    <resultMap id="BaseResultMap" type="com.carbontest.APIServer.entity.TProjectCcer">
+        <!--@Table t_project_ccer-->
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="projectId" column="project_id" jdbcType="INTEGER"/>
+        <result property="methodology" column="methodology" jdbcType="INTEGER"/>
+        <result property="projectFiles" column="project_files" jdbcType="VARCHAR"/>
+        <result property="validationFiles" column="validation_files" jdbcType="VARCHAR"/>
+        <result property="accessories" column="accessories" jdbcType="VARCHAR"/>
+        <result property="pddHash" column="pdd_hash" jdbcType="VARCHAR"/>
+        <result property="periodTimeStart" column="period_time_start" jdbcType="TIMESTAMP"/>
+        <result property="periodTimeEnd" column="period_time_end" jdbcType="TIMESTAMP"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          id, project_id, methodology, project_files, validation_files, accessories, pdd_hash, period_time_start, period_time_end, create_time, update_time
+        from carbon_test.t_project_ccer
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          id, project_id, methodology, project_files, validation_files, accessories, pdd_hash, period_time_start, period_time_end, create_time, update_time
+        from carbon_test.t_project_ccer
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          id, project_id, methodology, project_files, validation_files, accessories, pdd_hash, period_time_start, period_time_end, create_time, update_time
+        from carbon_test.t_project_ccer
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="projectId != null">
+                and project_id = #{projectId}
+            </if>
+            <if test="methodology != null">
+                and methodology = #{methodology}
+            </if>
+            <if test="projectFiles != null and projectFiles != ''">
+                and project_files = #{projectFiles}
+            </if>
+            <if test="validationFiles != null and validationFiles != ''">
+                and validation_files = #{validationFiles}
+            </if>
+            <if test="accessories != null and accessories != ''">
+                and accessories = #{accessories}
+            </if>
+            <if test="pddHash != null and pddHash != ''">
+                and pdd_hash = #{pddHash}
+            </if>
+            <if test="periodTimeStart != null">
+                and period_time_start = #{periodTimeStart}
+            </if>
+            <if test="periodTimeEnd != null">
+                and period_time_end = #{periodTimeEnd}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="updateTime != null">
+                and update_time = #{updateTime}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into carbon_test.t_project_ccer(project_id, methodology, project_files, validation_files, accessories, pdd_hash, period_time_start, period_time_end, create_time, update_time)
+        values (#{projectId}, #{methodology}, #{projectFiles}, #{validationFiles}, #{accessories}, #{pddHash}, #{periodTimeStart}, #{periodTimeEnd}, #{createTime}, #{updateTime})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update carbon_test.t_project_ccer
+        <set>
+            <if test="projectId != null">
+                project_id = #{projectId},
+            </if>
+            <if test="methodology != null">
+                methodology = #{methodology},
+            </if>
+            <if test="projectFiles != null and projectFiles != ''">
+                project_files = #{projectFiles},
+            </if>
+            <if test="validationFiles != null and validationFiles != ''">
+                validation_files = #{validationFiles},
+            </if>
+            <if test="accessories != null and accessories != ''">
+                accessories = #{accessories},
+            </if>
+            <if test="pddHash != null and pddHash != ''">
+                pdd_hash = #{pddHash},
+            </if>
+            <if test="periodTimeStart != null">
+                period_time_start = #{periodTimeStart},
+            </if>
+            <if test="periodTimeEnd != null">
+                period_time_end = #{periodTimeEnd},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from carbon_test.t_project_ccer where id = #{id}
+    </delete>
+
+</mapper>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.carbontest.APIServer.dao.carbon.TUserDao">
+
+    <resultMap id="BaseResultMap" type="com.carbontest.APIServer.entity.TUser">
+        <!--@Table t_user-->
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="userId" column="user_id" jdbcType="INTEGER"/>
+        <result property="accountId" column="account_id" jdbcType="INTEGER"/>
+        <result property="username" column="username" jdbcType="VARCHAR"/>
+        <result property="password" column="password" jdbcType="VARCHAR"/>
+        <result property="type" column="type" jdbcType="OTHER"/>
+        <result property="chainStatus" column="chain_status" jdbcType="OTHER"/>
+        <result property="publicKeyAddress" column="public_key_address" jdbcType="VARCHAR"/>
+        <result property="chainAddress" column="chain_address" jdbcType="VARCHAR"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          id, user_id, account_id, username, password, type, chain_status, public_key_address, chain_address, create_time, update_time
+        from carbon_test.t_user
+        where id = #{id}
+    </select>
+
+    <!--查询单个-->
+    <select id="queryByUsername" resultMap="BaseResultMap">
+        select
+          id, user_id, account_id, username, password, type, chain_status, public_key_address, chain_address, create_time, update_time
+        from carbon_test.t_user
+        where username = #{username}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          id, user_id, account_id, username, password, type, chain_status, public_key_address, chain_address, create_time, update_time
+        from carbon_test.t_user
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          id, user_id, account_id, username, password, type, chain_status, public_key_address, chain_address, create_time, update_time
+        from carbon_test.t_user
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+            <if test="accountId != null">
+                and account_id = #{accountId}
+            </if>
+            <if test="username != null and username != ''">
+                and username = #{username}
+            </if>
+            <if test="password != null and password != ''">
+                and password = #{password}
+            </if>
+            <if test="type != null">
+                and type = #{type}
+            </if>
+            <if test="chainStatus != null">
+                and chain_status = #{chainStatus}
+            </if>
+            <if test="publicKeyAddress != null and publicKeyAddress != ''">
+                and public_key_address = #{publicKeyAddress}
+            </if>
+            <if test="chainAddress != null and chainAddress != ''">
+                and chain_address = #{chainAddress}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="updateTime != null">
+                and update_time = #{updateTime}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into carbon_test.t_user(user_id, account_id, username, password, type, chain_status, public_key_address, chain_address, create_time, update_time)
+        values (#{userId}, #{accountId}, #{username}, #{password}, #{type}, #{chainStatus}, #{publicKeyAddress}, #{chainAddress}, #{createTime}, #{updateTime})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update carbon_test.t_user
+        <set>
+            <if test="userId != null">
+                user_id = #{userId},
+            </if>
+            <if test="accountId != null">
+                account_id = #{accountId},
+            </if>
+            <if test="username != null and username != ''">
+                username = #{username},
+            </if>
+            <if test="password != null and password != ''">
+                password = #{password},
+            </if>
+            <if test="type != null">
+                type = #{type},
+            </if>
+            <if test="chainStatus != null">
+                chain_status = #{chainStatus},
+            </if>
+            <if test="publicKeyAddress != null and publicKeyAddress != ''">
+                public_key_address = #{publicKeyAddress},
+            </if>
+            <if test="chainAddress != null and chainAddress != ''">
+                chain_address = #{chainAddress},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键修改数据-->
+    <update id="updateById">
+        update carbon_test.t_user
+        <set>
+            <if test="userId != null">
+                user_id = #{userId},
+            </if>
+            <if test="accountId != null">
+                account_id = #{accountId} ,
+            </if>
+            <if test="username != null and username != ''">
+                username = #{username},
+            </if>
+            <if test="password != null and password != ''">
+                password = #{password},
+            </if>
+            <if test="type != null">
+                type = #{type},
+            </if>
+            <if test="chainStatus != null">
+                chain_status = #{chainStatus},
+            </if>
+            <if test="publicKeyAddress != null and publicKeyAddress != ''">
+                public_key_address = #{publicKeyAddress},
+            </if>
+            <if test="chainAddress != null and chainAddress != ''">
+                chain_address = #{chainAddress},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键修改数据-->
+    <update id="updateByUserId">
+        update carbon_test.t_user
+        set account_id = NULL
+        where user_id = #{userId}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from carbon_test.t_user where id = #{id}
+    </delete>
+
+    <!--通过用户id删除-->
+    <delete id="deleteByUserId">
+        delete from carbon_test.t_user where user_id = #{userid}
+    </delete>
+
+</mapper>

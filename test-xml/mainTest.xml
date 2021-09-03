@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="碳资产主流程测试" verbose="10" time-out="600000" allow-return-values="true">
+    <test name="流程测试">
+        <classes>
+            <class name="com.carbontest.APIServer.User.regiesterTest">
+                <methods>
+                    <include name="regiestertest" description="注册"></include>
+                </methods>
+            </class>
+            <class name="com.carbontest.APIServer.User.loginTest">
+                <methods>
+                    <include name="logintest" description="登录"></include>
+                </methods>
+            </class>
+            <class name="com.carbontest.APIServer.Company.accountRegiesterTest">
+                <methods>
+                    <include name="accountRegiesterTest" description="完善信息"></include>
+                </methods>
+            </class>
+            <class name="com.carbontest.APIServer.Company.addCompanyTest">
+                <methods>
+                    <include name="addcompanytest" description="新增公司"></include>
+                </methods>
+            </class>
+            <class name="com.carbontest.APIServer.Company.checkCompanyTest">
+                <methods>
+                    <include name="checkcompanystest" description="服务商公司审核通过"></include>
+                    <include name="checkcompanymtest" description="卖家公司审核通过"></include>
+                </methods>
+            </class>
+            <class name="com.carbontest.APIServer.Project.projectApplyTest" >
+                <methods>
+                    <include name="projectapplytest" description="项目申请"></include>
+                </methods>
+            </class>
+            <class name="com.carbontest.APIServer.Project.checkProjectTest" >
+                <methods>
+                    <include name="checkprojecttest" description="项目审核"></include>
+                </methods>
+            </class>
+            <class name="com.carbontest.APIServer.Project.issueApplyTest" >
+            <methods>
+            <include name="issueapplytest" description="签发申请"></include>
+            </methods>
+            </class>
+            <class name="com.carbontest.APIServer.Asset.checkIssueTest" >
+                <methods>
+                    <include name="checkassettest" description="签发审核"></include>
+                </methods>
+            </class>
+            <class name="com.carbontest.APIServer.Transaction.addTransactionTest" >
+                <methods>
+                    <include name="addtransactiontest" description="交易申请"></include>
+                </methods>
+            </class>
+            <class name="com.carbontest.APIServer.Transaction.checkTransactionTest" >
+                <methods>
+                    <include name="checktransactiontest" description="交易审核"></include>
+                </methods>
+            </class>
+            <class name="com.carbontest.APIServer.Common.suiteCaseTest">
+                <methods>
+                    <include name="just" description="清理数据"></include>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>

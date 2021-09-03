@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.carbontest.APIServer.dao.carbon.TTransactionDao">
+
+    <resultMap id="BaseResultMap" type="com.carbontest.APIServer.entity.TTransaction">
+        <!--@Table t_transaction-->
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="userId" column="user_Id" jdbcType="INTEGER"/>
+        <result property="businessId" column="business_id" jdbcType="VARCHAR"/>
+        <result property="serialNumber" column="serial_number" jdbcType="INTEGER"/>
+        <result property="companyName" column="company_name" jdbcType="VARCHAR"/>
+        <result property="buyerName" column="buyer_name" jdbcType="VARCHAR"/>
+        <result property="sellerName" column="seller_name" jdbcType="VARCHAR"/>
+        <result property="projectName" column="project_name" jdbcType="VARCHAR"/>
+        <result property="projectType" column="project_type" jdbcType="OTHER"/>
+        <result property="quantity" column="quantity" jdbcType="INTEGER"/>
+        <result property="price" column="price" jdbcType="NUMERIC"/>
+        <result property="totalPrice" column="total_price" jdbcType="NUMERIC"/>
+        <result property="transactionTime" column="transaction_time" jdbcType="TIMESTAMP"/>
+        <result property="dataType" column="data_type" jdbcType="INTEGER"/>
+        <result property="contract" column="contract" jdbcType="VARCHAR"/>
+        <result property="status" column="status" jdbcType="OTHER"/>
+        <result property="entryType" column="entry_type" jdbcType="OTHER"/>
+        <result property="ratio" column="ratio" jdbcType="INTEGER"/>
+        <result property="commission" column="commission" jdbcType="NUMERIC"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          id, user_Id, business_id, serial_number, company_name, buyer_name, seller_name, project_name, project_type, quantity, price, total_price, transaction_time, data_type, contract, status, entry_type, ratio, commission
+        from carbon_test.t_transaction
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          id, user_Id, business_id, serial_number, company_name, buyer_name, seller_name, project_name, project_type, quantity, price, total_price, transaction_time, data_type, contract, status, entry_type, ratio, commission
+        from carbon_test.t_transaction
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          id, user_Id, business_id, serial_number, company_name, buyer_name, seller_name, project_name, project_type, quantity, price, total_price, transaction_time, data_type, contract, status, entry_type, ratio, commission
+        from carbon_test.t_transaction
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="userId != null">
+                and user_Id = #{userId}
+            </if>
+            <if test="businessId != null and businessId != ''">
+                and business_id = #{businessId}
+            </if>
+            <if test="serialNumber != null">
+                and serial_number = #{serialNumber}
+            </if>
+            <if test="companyName != null and companyName != ''">
+                and company_name = #{companyName}
+            </if>
+            <if test="buyerName != null and buyerName != ''">
+                and buyer_name = #{buyerName}
+            </if>
+            <if test="sellerName != null and sellerName != ''">
+                and seller_name = #{sellerName}
+            </if>
+            <if test="projectName != null and projectName != ''">
+                and project_name = #{projectName}
+            </if>
+            <if test="projectType != null">
+                and project_type = #{projectType}
+            </if>
+            <if test="quantity != null">
+                and quantity = #{quantity}
+            </if>
+            <if test="price != null">
+                and price = #{price}
+            </if>
+            <if test="totalPrice != null">
+                and total_price = #{totalPrice}
+            </if>
+            <if test="transactionTime != null">
+                and transaction_time = #{transactionTime}
+            </if>
+            <if test="dataType != null">
+                and data_type = #{dataType}
+            </if>
+            <if test="contract != null and contract != ''">
+                and contract = #{contract}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+            <if test="entryType != null">
+                and entry_type = #{entryType}
+            </if>
+            <if test="ratio != null">
+                and ratio = #{ratio}
+            </if>
+            <if test="commission != null">
+                and commission = #{commission}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into carbon_test.t_transaction(user_Id, business_id, serial_number, company_name, buyer_name, seller_name, project_name, project_type, quantity, price, total_price, transaction_time, data_type, contract, status, entry_type, ratio, commission)
+        values (#{userId}, #{businessId}, #{serialNumber}, #{companyName}, #{buyerName}, #{sellerName}, #{projectName}, #{projectType}, #{quantity}, #{price}, #{totalPrice}, #{transactionTime}, #{dataType}, #{contract}, #{status}, #{entryType}, #{ratio}, #{commission})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update carbon_test.t_transaction
+        <set>
+            <if test="userId != null">
+                user_Id = #{userId},
+            </if>
+            <if test="businessId != null and businessId != ''">
+                business_id = #{businessId},
+            </if>
+            <if test="serialNumber != null">
+                serial_number = #{serialNumber},
+            </if>
+            <if test="companyName != null and companyName != ''">
+                company_name = #{companyName},
+            </if>
+            <if test="buyerName != null and buyerName != ''">
+                buyer_name = #{buyerName},
+            </if>
+            <if test="sellerName != null and sellerName != ''">
+                seller_name = #{sellerName},
+            </if>
+            <if test="projectName != null and projectName != ''">
+                project_name = #{projectName},
+            </if>
+            <if test="projectType != null">
+                project_type = #{projectType},
+            </if>
+            <if test="quantity != null">
+                quantity = #{quantity},
+            </if>
+            <if test="price != null">
+                price = #{price},
+            </if>
+            <if test="totalPrice != null">
+                total_price = #{totalPrice},
+            </if>
+            <if test="transactionTime != null">
+                transaction_time = #{transactionTime},
+            </if>
+            <if test="dataType != null">
+                data_type = #{dataType},
+            </if>
+            <if test="contract != null and contract != ''">
+                contract = #{contract},
+            </if>
+            <if test="status != null">
+                status = #{status},
+            </if>
+            <if test="entryType != null">
+                entry_type = #{entryType},
+            </if>
+            <if test="ratio != null">
+                ratio = #{ratio},
+            </if>
+            <if test="commission != null">
+                commission = #{commission},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from carbon_test.t_transaction where id = #{id}
+    </delete>
+
+</mapper>

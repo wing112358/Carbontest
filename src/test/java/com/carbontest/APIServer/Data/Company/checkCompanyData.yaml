@@ -1,0 +1,25 @@
+checkcompanysnormal:
+  expectedresult: 操作成功
+  params:
+    applicationIssuance: 120
+    approveRemark: '确认无误后审核通过'
+    approveResult: 1
+    approveUser: '8008208820'
+    id: 101
+    ratio: 15
+    servicerId: '183331815631757312'
+checkcompanymnormal:
+  expectedresult: 操作成功
+  params:
+    applicationIssuance: 200
+    approveRemark: '再一次确认后审核通过'
+    approveResult: 1
+    approveUser: '8008208820'
+    id: 102
+    ratio: 15
+    servicerId: '183331815631757312'
+
+
+
+
+

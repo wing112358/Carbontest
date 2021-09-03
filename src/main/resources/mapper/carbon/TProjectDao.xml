@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.carbontest.APIServer.dao.carbon.TProjectDao">
+
+    <resultMap id="BaseResultMap" type="com.carbontest.APIServer.entity.TProject">
+        <!--@Table t_project-->
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="projectName" column="project_name" jdbcType="VARCHAR"/>
+        <result property="projectCode" column="project_code" jdbcType="VARCHAR"/>
+        <result property="userId" column="user_id" jdbcType="INTEGER"/>
+        <result property="companyId" column="company_id" jdbcType="INTEGER"/>
+        <result property="businessId" column="business_id" jdbcType="VARCHAR"/>
+        <result property="projectArea" column="project_area" jdbcType="VARCHAR"/>
+        <result property="projectType" column="project_type" jdbcType="OTHER"/>
+        <result property="estimatedTotal" column="estimated_total" jdbcType="INTEGER"/>
+        <!--<result property="periodTimeStart" column="period_time_start" jdbcType="TIMESTAMP"/>-->
+        <!--<result property="periodTimeEnd" column="period_time_end" jdbcType="TIMESTAMP"/>-->
+        <result property="applicationIssuance" column="application_issuance" jdbcType="INTEGER"/>
+        <result property="status" column="status" jdbcType="OTHER"/>
+        <result property="projectBrief" column="project_brief" jdbcType="OTHER"/>
+        <!--<result property="projectFiles" column="project_files" jdbcType="VARCHAR"/>-->
+        <!--<result property="validationFiles" column="validation_files" jdbcType="VARCHAR"/>-->
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+        <!--<result property="address" column="address" jdbcType="VARCHAR"/>-->
+        <!--<result property="pddHash" column="pdd_hash" jdbcType="VARCHAR"/>-->
+        <result property="accessories" column="accessories" jdbcType="VARCHAR"/>
+        <result property="chainStatus" column="chain_status" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          id, project_name, project_code, user_id, company_id, business_id, project_area, project_type,  estimated_total,  application_issuance, status, project_brief,  create_time, update_time, address, chain_status
+        from carbon_test.t_project
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          id, project_name, project_code, user_id, company_id, business_id, project_area, project_type,  estimated_total,  application_issuance, status, project_brief,  create_time, update_time, address,  chain_status
+        from carbon_test.t_project
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          id, project_name, project_code, user_id, company_id, business_id, project_area, project_type,  estimated_total,  application_issuance, status, project_brief,  create_time, update_time, address,  chain_status
+        from carbon_test.t_project
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="projectName != null and projectName != ''">
+                and project_name = #{projectName}
+            </if>
+            <if test="projectCode != null and projectCode != ''">
+                and project_code = #{projectCode}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+            <if test="companyId != null">
+                and company_id = #{companyId}
+            </if>
+            <if test="businessId != null and businessId != ''">
+                and business_id = #{businessId}
+            </if>
+            <if test="projectArea != null and projectArea != ''">
+                and project_area = #{projectArea}
+            </if>
+            <if test="projectType != null">
+                and project_type = #{projectType}
+            </if>
+            <if test="estimatedTotal != null">
+                and estimated_total = #{estimatedTotal}
+            </if>
+            <if test="applicationIssuance != null">
+                and application_issuance = #{applicationIssuance}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+            <if test="projectBrief != null">
+                and project_brief = #{projectBrief}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="updateTime != null">
+                and update_time = #{updateTime}
+            </if>
+            <if test="address != null and address != ''">
+                and address = #{address}
+            </if>
+            <if test="chainStatus != null">
+                and chain_status = #{chainStatus}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into carbon_test.t_project(project_name, project_code, user_id, company_id, business_id, project_area, project_type,  estimated_total, application_issuance, status, project_brief,  create_time, update_time, address,  chain_status)
+        values (#{projectName}, #{projectCode}, #{userId}, #{companyId}, #{businessId}, #{projectArea}, #{projectType},  #{estimatedTotal},  #{applicationIssuance}, #{status}, #{projectBrief},  #{createTime}, #{updateTime}, #{address}, #{chainStatus})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update carbon_test.t_project
+        <set>
+            <if test="projectName != null and projectName != ''">
+                project_name = #{projectName},
+            </if>
+            <if test="projectCode != null and projectCode != ''">
+                project_code = #{projectCode},
+            </if>
+            <if test="userId != null">
+                user_id = #{userId},
+            </if>
+            <if test="companyId != null">
+                company_id = #{companyId},
+            </if>
+            <if test="businessId != null and businessId != ''">
+                business_id = #{businessId},
+            </if>
+            <if test="projectArea != null and projectArea != ''">
+                project_area = #{projectArea},
+            </if>
+            <if test="projectType != null">
+                project_type = #{projectType},
+            </if>
+            <if test="estimatedTotal != null">
+                estimated_total = #{estimatedTotal},
+            </if>
+            <if test="applicationIssuance != null">
+                application_issuance = #{applicationIssuance},
+            </if>
+            <if test="status != null">
+                status = #{status},
+            </if>
+            <if test="projectBrief != null">
+                project_brief = #{projectBrief},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+            <if test="address != null and address != ''">
+                address = #{address},
+            </if>
+            <if test="chainStatus != null">
+                chain_status = #{chainStatus},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from carbon_test.t_project where id = #{id}
+    </delete>
+
+</mapper>

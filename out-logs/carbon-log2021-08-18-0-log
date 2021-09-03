@@ -1,0 +1,844 @@
+13:50:07.018 [main] INFO  c.c.APIServer.User.regiesterTest - Starting regiesterTest on DESKTOP-K3J1M0C with PID 23800 (F:\code\javacode\Carbontest\target\test-classes started by wing in F:\code\javacode\Carbontest)
+13:50:07.019 [main] DEBUG c.c.APIServer.User.regiesterTest - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+13:50:07.020 [main] INFO  c.c.APIServer.User.regiesterTest - No active profile set, falling back to default profiles: default
+13:50:08.456 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:50:08.462 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:50:08.463 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:50:08.465 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:50:08.466 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:50:08.468 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:50:08.469 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:50:08.470 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:50:08.471 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:50:08.472 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:50:08.473 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:50:09.343 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+13:50:10.355 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+13:50:10.469 [main] INFO  c.c.APIServer.User.regiesterTest - Started regiesterTest in 3.803 seconds (JVM running for 5.4)
+13:50:10.698 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.21:8892/api/user/registered
+13:50:10.698 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+13:50:10.703 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","code":"1234","password":"123456","address":"一个特殊的地址0001","businessLicense":"https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1627366936298/5MB%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%9B%BE%E7%89%87.jpg","companyName":"为人民服务0001","contact":"8008208820","legalPerson":"法人0000","legalPersonIdCard":"340828199401077878","mail":"testproducer@qq.com","phone":"17826830021","servicerId":1472580000,"socialCreditCode":"creditcode00000000"}
+13:50:10.973 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+13:50:10.973 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629265810507","data":true,"path":null}
+13:50:10.973 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+13:50:10.973 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 05:50:10 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+13:50:10.982 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":true,"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265810507"}
+13:50:10.983 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":true,"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265810507"}
+13:50:10.983 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.User.regiesterTest - {"data":true,"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265810507"}
+13:50:11.077 [TestNG-method=regiestertest-1] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+13:50:11.209 [TestNG-method=regiestertest-1] DEBUG c.c.A.d.c.TUserDao.queryByUsername - ==>  Preparing: select id, user_id, account_id, username, password, type, chain_status, public_key_address, chain_address, create_time, update_time from carbon_test.t_user where username = ? 
+13:50:11.230 [TestNG-method=regiestertest-1] DEBUG c.c.A.d.c.TUserDao.queryByUsername - ==> Parameters: 17826830021(String)
+13:50:11.249 [TestNG-method=regiestertest-1] DEBUG c.c.A.d.c.TUserDao.queryByUsername - <==      Total: 1
+13:50:11.249 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.User.regiesterTest - 请求中获取的用户id：182962005689376768
+13:50:11.250 [TestNG-method=regiestertest-1] DEBUG c.c.A.d.c.TUserRoleDao.queryByUserId - ==>  Preparing: select id, user_id, role_code from carbon_test.t_user_role where user_id = ? 
+13:50:11.250 [TestNG-method=regiestertest-1] DEBUG c.c.A.d.c.TUserRoleDao.queryByUserId - ==> Parameters: 182962005689376768(Long)
+13:50:11.252 [TestNG-method=regiestertest-1] DEBUG c.c.A.d.c.TUserRoleDao.queryByUserId - <==      Total: 1
+13:50:11.273 [TestNG-method=regiestertest-1] DEBUG c.c.A.dao.carbon.TUserDao.update - ==>  Preparing: update carbon_test.t_user SET type = ? where id = ? 
+13:50:11.273 [TestNG-method=regiestertest-1] DEBUG c.c.A.dao.carbon.TUserDao.update - ==> Parameters: 1(Integer), 68(Long)
+13:50:11.277 [TestNG-method=regiestertest-1] DEBUG c.c.A.dao.carbon.TUserDao.update - <==    Updates: 1
+13:50:11.278 [TestNG-method=regiestertest-1] DEBUG c.c.A.dao.carbon.TUserDao.queryById - ==>  Preparing: select id, user_id, account_id, username, password, type, chain_status, public_key_address, chain_address, create_time, update_time from carbon_test.t_user where id = ? 
+13:50:11.278 [TestNG-method=regiestertest-1] DEBUG c.c.A.dao.carbon.TUserDao.queryById - ==> Parameters: 68(Long)
+13:50:11.280 [TestNG-method=regiestertest-1] DEBUG c.c.A.dao.carbon.TUserDao.queryById - <==      Total: 1
+13:50:11.281 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.User.regiesterTest - 用户表更新成功
+13:50:11.281 [TestNG-method=regiestertest-1] DEBUG c.c.A.dao.carbon.TUserRoleDao.update - ==>  Preparing: update carbon_test.t_user_role SET role_code = ? where id = ? 
+13:50:11.281 [TestNG-method=regiestertest-1] DEBUG c.c.A.dao.carbon.TUserRoleDao.update - ==> Parameters: servicer(String), 68(Long)
+13:50:11.284 [TestNG-method=regiestertest-1] DEBUG c.c.A.dao.carbon.TUserRoleDao.update - <==    Updates: 1
+13:50:11.284 [TestNG-method=regiestertest-1] DEBUG c.c.A.d.c.TUserRoleDao.queryById - ==>  Preparing: select id, user_id, role_code from carbon_test.t_user_role where id = ? 
+13:50:11.285 [TestNG-method=regiestertest-1] DEBUG c.c.A.d.c.TUserRoleDao.queryById - ==> Parameters: 68(Long)
+13:50:11.287 [TestNG-method=regiestertest-1] DEBUG c.c.A.d.c.TUserRoleDao.queryById - <==      Total: 1
+13:50:11.287 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.User.regiesterTest - 角色表更新成功
+13:50:11.303 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 准备开始---------
+13:50:11.307 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.21:8892/api/user/login
+13:50:11.307 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+13:50:11.307 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","password":"123456"}
+13:50:11.556 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+13:50:11.556 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629265811097","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU4MTEwOTQsImV4cCI6MTYyOTg3MDYxMX0.7dQpeE1tLWSaCJI3DTScYJLvZMiuLBjTIGPq_m3R7T5gR2zK9zE5jpVn7nk7Rw13m8S9D3UvtU2H3xszDfMWgQ"},"path":null}
+13:50:11.556 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+13:50:11.556 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 05:50:10 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+13:50:11.556 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU4MTEwOTQsImV4cCI6MTYyOTg3MDYxMX0.7dQpeE1tLWSaCJI3DTScYJLvZMiuLBjTIGPq_m3R7T5gR2zK9zE5jpVn7nk7Rw13m8S9D3UvtU2H3xszDfMWgQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265811097"}
+13:50:11.556 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU4MTEwOTQsImV4cCI6MTYyOTg3MDYxMX0.7dQpeE1tLWSaCJI3DTScYJLvZMiuLBjTIGPq_m3R7T5gR2zK9zE5jpVn7nk7Rw13m8S9D3UvtU2H3xszDfMWgQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265811097"}
+13:50:11.557 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU4MTEwOTQsImV4cCI6MTYyOTg3MDYxMX0.7dQpeE1tLWSaCJI3DTScYJLvZMiuLBjTIGPq_m3R7T5gR2zK9zE5jpVn7nk7Rw13m8S9D3UvtU2H3xszDfMWgQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265811097"}
+13:50:11.557 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU4MTEwOTQsImV4cCI6MTYyOTg3MDYxMX0.7dQpeE1tLWSaCJI3DTScYJLvZMiuLBjTIGPq_m3R7T5gR2zK9zE5jpVn7nk7Rw13m8S9D3UvtU2H3xszDfMWgQ"}
+13:50:11.557 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU4MTEwOTQsImV4cCI6MTYyOTg3MDYxMX0.7dQpeE1tLWSaCJI3DTScYJLvZMiuLBjTIGPq_m3R7T5gR2zK9zE5jpVn7nk7Rw13m8S9D3UvtU2H3xszDfMWgQ
+13:50:11.565 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.carbontest.APIServer.BaseLoginTest], using SpringBootContextLoader
+13:50:11.566 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.carbontest.APIServer.BaseLoginTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+13:50:11.566 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.carbontest.APIServer.BaseLoginTest]: BaseLoginTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:50:11.570 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.carbontest.APIServer.APIServiceApplication for test class com.carbontest.APIServer.BaseLoginTest
+13:50:11.572 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1d61a348, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@78a515e4, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@d2291de, org.springframework.test.context.support.DirtiesContextTestExecutionListener@51c8f62c]
+13:50:11.573 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 准备开始---------
+13:50:11.573 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:50:11.576 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.21:8892/api/user/login
+13:50:11.576 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+13:50:11.576 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","code":null,"password":"123456"}
+13:50:11.809 [main] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+13:50:11.809 [main] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629265811350","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU4MTEzNDcsImV4cCI6MTYyOTg3MDYxMX0.Vls3Cpd_x5U2MBv-2MXCwjNlAMypvamK_eQm4mZDlyYLEpSak9EJ1LNHoUH_MIzgLG10uR4k1Qz-C9tR4CPcJQ"},"path":null}
+13:50:11.809 [main] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+13:50:11.809 [main] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 05:50:10 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+13:50:11.809 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU4MTEzNDcsImV4cCI6MTYyOTg3MDYxMX0.Vls3Cpd_x5U2MBv-2MXCwjNlAMypvamK_eQm4mZDlyYLEpSak9EJ1LNHoUH_MIzgLG10uR4k1Qz-C9tR4CPcJQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265811350"}
+13:50:11.809 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU4MTEzNDcsImV4cCI6MTYyOTg3MDYxMX0.Vls3Cpd_x5U2MBv-2MXCwjNlAMypvamK_eQm4mZDlyYLEpSak9EJ1LNHoUH_MIzgLG10uR4k1Qz-C9tR4CPcJQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265811350"}
+13:50:11.809 [main] INFO  c.carbontest.APIServer.BaseLoginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU4MTEzNDcsImV4cCI6MTYyOTg3MDYxMX0.Vls3Cpd_x5U2MBv-2MXCwjNlAMypvamK_eQm4mZDlyYLEpSak9EJ1LNHoUH_MIzgLG10uR4k1Qz-C9tR4CPcJQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265811350"}
+13:50:11.809 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU4MTEzNDcsImV4cCI6MTYyOTg3MDYxMX0.Vls3Cpd_x5U2MBv-2MXCwjNlAMypvamK_eQm4mZDlyYLEpSak9EJ1LNHoUH_MIzgLG10uR4k1Qz-C9tR4CPcJQ"}
+13:50:11.809 [main] INFO  c.carbontest.APIServer.BaseLoginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU4MTEzNDcsImV4cCI6MTYyOTg3MDYxMX0.Vls3Cpd_x5U2MBv-2MXCwjNlAMypvamK_eQm4mZDlyYLEpSak9EJ1LNHoUH_MIzgLG10uR4k1Qz-C9tR4CPcJQ
+13:50:11.838 [main] DEBUG c.c.A.d.c.T.deleteByUserId - ==>  Preparing: delete from carbon_test.t_user_role where user_id = ? 
+13:50:11.838 [main] DEBUG c.c.A.d.c.T.deleteByUserId - ==> Parameters: null
+13:50:11.841 [main] DEBUG c.c.A.d.c.T.deleteByUserId - <==    Updates: 0
+13:50:11.842 [main] DEBUG c.c.A.d.c.TUserDao.deleteByUserId - ==>  Preparing: delete from carbon_test.t_user where user_id = ? 
+13:50:11.842 [main] DEBUG c.c.A.d.c.TUserDao.deleteByUserId - ==> Parameters: null
+13:50:11.844 [main] DEBUG c.c.A.d.c.TUserDao.deleteByUserId - <==    Updates: 0
+13:50:12.170 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+13:50:12.180 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+13:51:37.358 [main] INFO  c.c.APIServer.User.regiesterTest - Starting regiesterTest on DESKTOP-K3J1M0C with PID 16336 (F:\code\javacode\Carbontest\target\test-classes started by wing in F:\code\javacode\Carbontest)
+13:51:37.359 [main] DEBUG c.c.APIServer.User.regiesterTest - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+13:51:37.360 [main] INFO  c.c.APIServer.User.regiesterTest - No active profile set, falling back to default profiles: default
+13:51:38.388 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:51:38.398 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:51:38.401 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:51:38.403 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:51:38.406 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:51:38.408 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:51:38.410 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:51:38.413 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:51:38.415 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:51:38.417 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:51:38.419 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:51:39.390 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+13:51:40.329 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+13:51:40.442 [main] INFO  c.c.APIServer.User.regiesterTest - Started regiesterTest in 3.44 seconds (JVM running for 4.847)
+13:51:40.668 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.21:8892/api/user/registered
+13:51:40.668 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+13:51:40.673 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","code":"1234","password":"123456","address":"一个特殊的地址0001","businessLicense":"https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1627366936298/5MB%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%9B%BE%E7%89%87.jpg","companyName":"为人民服务0001","contact":"8008208820","legalPerson":"法人0000","legalPersonIdCard":"340828199401077878","mail":"testproducer@qq.com","phone":"17826830021","servicerId":1472580000,"socialCreditCode":"creditcode00000000"}
+13:51:40.751 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+13:51:40.751 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":400,"error":"Access.failure.general","message":"该用户已存在","timestamp":"1629265900284","data":null,"path":null}
+13:51:40.751 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+13:51:40.751 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 05:51:40 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+13:51:40.762 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"error":"Access.failure.general","message":"该用户已存在","status":400,"timestamp":"1629265900284"}
+13:51:40.779 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 准备开始---------
+13:51:40.781 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.21:8892/api/user/login
+13:51:40.781 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+13:51:40.781 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","password":"123456"}
+13:51:41.047 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+13:51:41.047 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629265900590","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5MDA1ODcsImV4cCI6MTYyOTg3MDcwMH0.sxImHAaM4GuA3f2xa6eTMOgn3twN4c1JnHo1j42q5WIf-DCmWWLF6FXsGsl7qoJsR0-SLqjdk9jzs26haYKBLg"},"path":null}
+13:51:41.047 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+13:51:41.047 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 05:51:40 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+13:51:41.048 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5MDA1ODcsImV4cCI6MTYyOTg3MDcwMH0.sxImHAaM4GuA3f2xa6eTMOgn3twN4c1JnHo1j42q5WIf-DCmWWLF6FXsGsl7qoJsR0-SLqjdk9jzs26haYKBLg"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265900590"}
+13:51:41.048 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5MDA1ODcsImV4cCI6MTYyOTg3MDcwMH0.sxImHAaM4GuA3f2xa6eTMOgn3twN4c1JnHo1j42q5WIf-DCmWWLF6FXsGsl7qoJsR0-SLqjdk9jzs26haYKBLg"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265900590"}
+13:51:41.048 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5MDA1ODcsImV4cCI6MTYyOTg3MDcwMH0.sxImHAaM4GuA3f2xa6eTMOgn3twN4c1JnHo1j42q5WIf-DCmWWLF6FXsGsl7qoJsR0-SLqjdk9jzs26haYKBLg"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265900590"}
+13:51:41.048 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5MDA1ODcsImV4cCI6MTYyOTg3MDcwMH0.sxImHAaM4GuA3f2xa6eTMOgn3twN4c1JnHo1j42q5WIf-DCmWWLF6FXsGsl7qoJsR0-SLqjdk9jzs26haYKBLg"}
+13:51:41.048 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5MDA1ODcsImV4cCI6MTYyOTg3MDcwMH0.sxImHAaM4GuA3f2xa6eTMOgn3twN4c1JnHo1j42q5WIf-DCmWWLF6FXsGsl7qoJsR0-SLqjdk9jzs26haYKBLg
+13:51:41.067 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.carbontest.APIServer.BaseLoginTest], using SpringBootContextLoader
+13:51:41.069 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.carbontest.APIServer.BaseLoginTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+13:51:41.070 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.carbontest.APIServer.BaseLoginTest]: BaseLoginTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:51:41.081 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.carbontest.APIServer.APIServiceApplication for test class com.carbontest.APIServer.BaseLoginTest
+13:51:41.085 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e4599c0, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7dffda8b, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3d1f558a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6abdec0e]
+13:51:41.085 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 准备开始---------
+13:51:41.086 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:51:41.090 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.21:8892/api/user/login
+13:51:41.091 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+13:51:41.091 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","code":null,"password":"123456"}
+13:51:41.320 [main] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+13:51:41.320 [main] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629265900863","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5MDA4NjEsImV4cCI6MTYyOTg3MDcwMH0.qAXuCJ0YSPo_ZDTib9xc-abHU5Vu_gPKYVGeXzC9DMXT4BlgBHYdKBVgrOGmmF92Jtwhf_sTbhTQtJJ5HR_aBQ"},"path":null}
+13:51:41.320 [main] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+13:51:41.320 [main] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 05:51:40 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+13:51:41.321 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5MDA4NjEsImV4cCI6MTYyOTg3MDcwMH0.qAXuCJ0YSPo_ZDTib9xc-abHU5Vu_gPKYVGeXzC9DMXT4BlgBHYdKBVgrOGmmF92Jtwhf_sTbhTQtJJ5HR_aBQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265900863"}
+13:51:41.321 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5MDA4NjEsImV4cCI6MTYyOTg3MDcwMH0.qAXuCJ0YSPo_ZDTib9xc-abHU5Vu_gPKYVGeXzC9DMXT4BlgBHYdKBVgrOGmmF92Jtwhf_sTbhTQtJJ5HR_aBQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265900863"}
+13:51:41.321 [main] INFO  c.carbontest.APIServer.BaseLoginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5MDA4NjEsImV4cCI6MTYyOTg3MDcwMH0.qAXuCJ0YSPo_ZDTib9xc-abHU5Vu_gPKYVGeXzC9DMXT4BlgBHYdKBVgrOGmmF92Jtwhf_sTbhTQtJJ5HR_aBQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265900863"}
+13:51:41.321 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5MDA4NjEsImV4cCI6MTYyOTg3MDcwMH0.qAXuCJ0YSPo_ZDTib9xc-abHU5Vu_gPKYVGeXzC9DMXT4BlgBHYdKBVgrOGmmF92Jtwhf_sTbhTQtJJ5HR_aBQ"}
+13:51:41.321 [main] INFO  c.carbontest.APIServer.BaseLoginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5MDA4NjEsImV4cCI6MTYyOTg3MDcwMH0.qAXuCJ0YSPo_ZDTib9xc-abHU5Vu_gPKYVGeXzC9DMXT4BlgBHYdKBVgrOGmmF92Jtwhf_sTbhTQtJJ5HR_aBQ
+13:51:41.325 [TestNG-method=accountRegiesterTest-1] INFO  c.c.A.Company.accountRegiesterTest - 开始执行---------
+13:51:41.325 [TestNG-method=accountRegiesterTest-1] INFO  c.c.A.Company.accountRegiesterTest - 准备开始---------
+13:51:41.328 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.21:8892/api/company/registered
+13:51:41.328 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+13:51:41.328 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"address":"日落大道0000","businessLicense":"https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1627366715691/5MB%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%9B%BE%E7%89%87.jpg","companyName":"服务商公司0000","contact":"8008208822","legalPerson":"法人0000","legalPersonIdCard":"340828199401076700","mail":"test0000@qq.com","phone":"17826830021","servicerId":1472580001,"socialCreditCode":"creditcode00000000"}
+13:51:41.616 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+13:51:41.617 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":400,"error":"Access.failure.general","message":"获取用户信息异常","timestamp":"1629265901158","data":null,"path":null}
+13:51:41.617 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+13:51:41.618 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 05:51:40 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+13:51:41.618 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"error":"Access.failure.general","message":"获取用户信息异常","status":400,"timestamp":"1629265901158"}
+13:51:41.626 [main] INFO  c.c.APIServer.User.regiesterTest - 请求放置的用户id：null
+13:51:41.630 [main] INFO  c.c.A.Company.accountRegiesterTest - 请求放置的公司id：null
+13:51:41.770 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+13:51:41.904 [main] DEBUG c.c.A.d.c.T.deleteByUserId - ==>  Preparing: delete from carbon_test.t_user_role where user_id = ? 
+13:51:41.926 [main] DEBUG c.c.A.d.c.T.deleteByUserId - ==> Parameters: null
+13:51:41.929 [main] DEBUG c.c.A.d.c.T.deleteByUserId - <==    Updates: 0
+13:51:41.930 [main] DEBUG c.c.A.d.c.TUserDao.deleteByUserId - ==>  Preparing: delete from carbon_test.t_user where user_id = ? 
+13:51:41.930 [main] DEBUG c.c.A.d.c.TUserDao.deleteByUserId - ==> Parameters: null
+13:51:41.932 [main] DEBUG c.c.A.d.c.TUserDao.deleteByUserId - <==    Updates: 0
+13:51:42.257 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+13:51:42.266 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+13:52:47.997 [main] INFO  c.c.APIServer.User.regiesterTest - Starting regiesterTest on DESKTOP-K3J1M0C with PID 26012 (F:\code\javacode\Carbontest\target\test-classes started by wing in F:\code\javacode\Carbontest)
+13:52:47.998 [main] DEBUG c.c.APIServer.User.regiesterTest - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+13:52:47.999 [main] INFO  c.c.APIServer.User.regiesterTest - No active profile set, falling back to default profiles: default
+13:52:48.968 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:52:48.973 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:52:48.975 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:52:48.976 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:52:48.978 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:52:48.980 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:52:48.981 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:52:48.983 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:52:48.984 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:52:48.985 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:52:48.986 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:52:49.801 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+13:52:50.820 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+13:52:50.932 [main] INFO  c.c.APIServer.User.regiesterTest - Started regiesterTest in 3.278 seconds (JVM running for 4.692)
+13:52:51.144 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.21:8892/api/user/registered
+13:52:51.145 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+13:52:51.148 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","code":"1234","password":"123456","address":"一个特殊的地址0001","businessLicense":"https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1627366936298/5MB%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%9B%BE%E7%89%87.jpg","companyName":"为人民服务0001","contact":"8008208820","legalPerson":"法人0000","legalPersonIdCard":"340828199401077878","mail":"testproducer@qq.com","phone":"17826830021","servicerId":1472580000,"socialCreditCode":"creditcode00000000"}
+13:52:51.483 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+13:52:51.483 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629265970987","data":true,"path":null}
+13:52:51.483 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+13:52:51.484 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 05:52:50 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+13:52:51.503 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":true,"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265970987"}
+13:52:51.505 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":true,"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265970987"}
+13:52:51.505 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.User.regiesterTest - {"data":true,"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265970987"}
+13:52:51.607 [TestNG-method=regiestertest-1] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+13:52:51.728 [TestNG-method=regiestertest-1] DEBUG c.c.A.d.c.TUserDao.queryByUsername - ==>  Preparing: select id, user_id, account_id, username, password, type, chain_status, public_key_address, chain_address, create_time, update_time from carbon_test.t_user where username = ? 
+13:52:51.749 [TestNG-method=regiestertest-1] DEBUG c.c.A.d.c.TUserDao.queryByUsername - ==> Parameters: 17826830021(String)
+13:52:51.769 [TestNG-method=regiestertest-1] DEBUG c.c.A.d.c.TUserDao.queryByUsername - <==      Total: 1
+13:52:51.770 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.User.regiesterTest - 请求中获取的用户id：182962678602539008
+13:52:51.770 [TestNG-method=regiestertest-1] DEBUG c.c.A.d.c.TUserRoleDao.queryByUserId - ==>  Preparing: select id, user_id, role_code from carbon_test.t_user_role where user_id = ? 
+13:52:51.771 [TestNG-method=regiestertest-1] DEBUG c.c.A.d.c.TUserRoleDao.queryByUserId - ==> Parameters: 182962678602539008(Long)
+13:52:51.773 [TestNG-method=regiestertest-1] DEBUG c.c.A.d.c.TUserRoleDao.queryByUserId - <==      Total: 1
+13:52:51.795 [TestNG-method=regiestertest-1] DEBUG c.c.A.dao.carbon.TUserDao.update - ==>  Preparing: update carbon_test.t_user SET type = ? where id = ? 
+13:52:51.796 [TestNG-method=regiestertest-1] DEBUG c.c.A.dao.carbon.TUserDao.update - ==> Parameters: 1(Integer), 69(Long)
+13:52:51.799 [TestNG-method=regiestertest-1] DEBUG c.c.A.dao.carbon.TUserDao.update - <==    Updates: 1
+13:52:51.800 [TestNG-method=regiestertest-1] DEBUG c.c.A.dao.carbon.TUserDao.queryById - ==>  Preparing: select id, user_id, account_id, username, password, type, chain_status, public_key_address, chain_address, create_time, update_time from carbon_test.t_user where id = ? 
+13:52:51.800 [TestNG-method=regiestertest-1] DEBUG c.c.A.dao.carbon.TUserDao.queryById - ==> Parameters: 69(Long)
+13:52:51.802 [TestNG-method=regiestertest-1] DEBUG c.c.A.dao.carbon.TUserDao.queryById - <==      Total: 1
+13:52:51.802 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.User.regiesterTest - 用户表更新成功
+13:52:51.803 [TestNG-method=regiestertest-1] DEBUG c.c.A.dao.carbon.TUserRoleDao.update - ==>  Preparing: update carbon_test.t_user_role SET role_code = ? where id = ? 
+13:52:51.803 [TestNG-method=regiestertest-1] DEBUG c.c.A.dao.carbon.TUserRoleDao.update - ==> Parameters: servicer(String), 69(Long)
+13:52:51.806 [TestNG-method=regiestertest-1] DEBUG c.c.A.dao.carbon.TUserRoleDao.update - <==    Updates: 1
+13:52:51.807 [TestNG-method=regiestertest-1] DEBUG c.c.A.d.c.TUserRoleDao.queryById - ==>  Preparing: select id, user_id, role_code from carbon_test.t_user_role where id = ? 
+13:52:51.807 [TestNG-method=regiestertest-1] DEBUG c.c.A.d.c.TUserRoleDao.queryById - ==> Parameters: 69(Long)
+13:52:51.809 [TestNG-method=regiestertest-1] DEBUG c.c.A.d.c.TUserRoleDao.queryById - <==      Total: 1
+13:52:51.809 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.User.regiesterTest - 角色表更新成功
+13:52:51.820 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 准备开始---------
+13:52:51.824 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.21:8892/api/user/login
+13:52:51.824 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+13:52:51.824 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","password":"123456"}
+13:52:52.066 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+13:52:52.067 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629265971609","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5NzE2MDYsImV4cCI6MTYyOTg3MDc3MX0.JX0K_5PI-zC-0DRkwwaaJLvmoiM7t_x9aAdsnWpLq8lC56O4JC2CSuYzEKO78qBv18bqQjWMp_uKRNh9ld-oSA"},"path":null}
+13:52:52.067 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+13:52:52.067 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 05:52:50 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+13:52:52.067 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5NzE2MDYsImV4cCI6MTYyOTg3MDc3MX0.JX0K_5PI-zC-0DRkwwaaJLvmoiM7t_x9aAdsnWpLq8lC56O4JC2CSuYzEKO78qBv18bqQjWMp_uKRNh9ld-oSA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265971609"}
+13:52:52.067 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5NzE2MDYsImV4cCI6MTYyOTg3MDc3MX0.JX0K_5PI-zC-0DRkwwaaJLvmoiM7t_x9aAdsnWpLq8lC56O4JC2CSuYzEKO78qBv18bqQjWMp_uKRNh9ld-oSA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265971609"}
+13:52:52.067 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5NzE2MDYsImV4cCI6MTYyOTg3MDc3MX0.JX0K_5PI-zC-0DRkwwaaJLvmoiM7t_x9aAdsnWpLq8lC56O4JC2CSuYzEKO78qBv18bqQjWMp_uKRNh9ld-oSA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265971609"}
+13:52:52.067 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5NzE2MDYsImV4cCI6MTYyOTg3MDc3MX0.JX0K_5PI-zC-0DRkwwaaJLvmoiM7t_x9aAdsnWpLq8lC56O4JC2CSuYzEKO78qBv18bqQjWMp_uKRNh9ld-oSA"}
+13:52:52.067 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5NzE2MDYsImV4cCI6MTYyOTg3MDc3MX0.JX0K_5PI-zC-0DRkwwaaJLvmoiM7t_x9aAdsnWpLq8lC56O4JC2CSuYzEKO78qBv18bqQjWMp_uKRNh9ld-oSA
+13:52:52.076 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.carbontest.APIServer.BaseLoginTest], using SpringBootContextLoader
+13:52:52.077 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.carbontest.APIServer.BaseLoginTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+13:52:52.077 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.carbontest.APIServer.BaseLoginTest]: BaseLoginTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:52:52.081 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.carbontest.APIServer.APIServiceApplication for test class com.carbontest.APIServer.BaseLoginTest
+13:52:52.083 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e4599c0, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7dffda8b, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3d1f558a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6abdec0e]
+13:52:52.083 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 准备开始---------
+13:52:52.083 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.21:8892
+13:52:52.087 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.21:8892/api/user/login
+13:52:52.087 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+13:52:52.087 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","code":null,"password":"123456"}
+13:52:52.323 [main] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+13:52:52.324 [main] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629265971864","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5NzE4NjAsImV4cCI6MTYyOTg3MDc3MX0.jTeiNApB7yIxZ9F_XkqDfo1F-gvhslh7E8gIF7V2ueo33WOKovdsxSuFNsWY2vM5jjYi9CPmcFcva2QgjnJ5Hw"},"path":null}
+13:52:52.324 [main] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+13:52:52.324 [main] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 05:52:50 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+13:52:52.325 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5NzE4NjAsImV4cCI6MTYyOTg3MDc3MX0.jTeiNApB7yIxZ9F_XkqDfo1F-gvhslh7E8gIF7V2ueo33WOKovdsxSuFNsWY2vM5jjYi9CPmcFcva2QgjnJ5Hw"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265971864"}
+13:52:52.326 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5NzE4NjAsImV4cCI6MTYyOTg3MDc3MX0.jTeiNApB7yIxZ9F_XkqDfo1F-gvhslh7E8gIF7V2ueo33WOKovdsxSuFNsWY2vM5jjYi9CPmcFcva2QgjnJ5Hw"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265971864"}
+13:52:52.327 [main] INFO  c.carbontest.APIServer.BaseLoginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5NzE4NjAsImV4cCI6MTYyOTg3MDc3MX0.jTeiNApB7yIxZ9F_XkqDfo1F-gvhslh7E8gIF7V2ueo33WOKovdsxSuFNsWY2vM5jjYi9CPmcFcva2QgjnJ5Hw"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629265971864"}
+13:52:52.328 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5NzE4NjAsImV4cCI6MTYyOTg3MDc3MX0.jTeiNApB7yIxZ9F_XkqDfo1F-gvhslh7E8gIF7V2ueo33WOKovdsxSuFNsWY2vM5jjYi9CPmcFcva2QgjnJ5Hw"}
+13:52:52.328 [main] INFO  c.carbontest.APIServer.BaseLoginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNjU5NzE4NjAsImV4cCI6MTYyOTg3MDc3MX0.jTeiNApB7yIxZ9F_XkqDfo1F-gvhslh7E8gIF7V2ueo33WOKovdsxSuFNsWY2vM5jjYi9CPmcFcva2QgjnJ5Hw
+13:52:52.350 [TestNG-method=accountRegiesterTest-1] INFO  c.c.A.Company.accountRegiesterTest - 开始执行---------
+13:52:52.351 [TestNG-method=accountRegiesterTest-1] INFO  c.c.A.Company.accountRegiesterTest - 准备开始---------
+13:52:52.361 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.21:8892/api/company/registered
+13:52:52.361 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+13:52:52.361 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"address":"日落大道0000","businessLicense":"https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1627366715691/5MB%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%9B%BE%E7%89%87.jpg","companyName":"服务商公司0000","contact":"8008208822","legalPerson":"法人0000","legalPersonIdCard":"340828199401076700","mail":"test0000@qq.com","phone":"17826830021","servicerId":1472580001,"socialCreditCode":"creditcode00000000"}
+13:52:52.387 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+13:52:52.388 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":400,"error":"Access.failure.general","message":"获取用户信息异常","timestamp":"1629265971930","data":null,"path":null}
+13:52:52.388 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+13:52:52.388 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 05:52:50 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+13:52:52.388 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"error":"Access.failure.general","message":"获取用户信息异常","status":400,"timestamp":"1629265971930"}
+13:52:52.392 [main] INFO  c.c.APIServer.User.regiesterTest - 请求放置的用户id：182962678602539008
+13:52:52.394 [main] INFO  c.c.A.Company.accountRegiesterTest - 请求放置的公司id：null
+13:52:52.409 [main] DEBUG c.c.A.d.c.T.deleteByUserId - ==>  Preparing: delete from carbon_test.t_user_role where user_id = ? 
+13:52:52.409 [main] DEBUG c.c.A.d.c.T.deleteByUserId - ==> Parameters: null
+13:52:52.412 [main] DEBUG c.c.A.d.c.T.deleteByUserId - <==    Updates: 0
+13:52:52.413 [main] DEBUG c.c.A.d.c.TUserDao.deleteByUserId - ==>  Preparing: delete from carbon_test.t_user where user_id = ? 
+13:52:52.413 [main] DEBUG c.c.A.d.c.TUserDao.deleteByUserId - ==> Parameters: null
+13:52:52.415 [main] DEBUG c.c.A.d.c.TUserDao.deleteByUserId - <==    Updates: 0
+13:52:52.732 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+13:52:52.743 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+14:54:00.726 [main] INFO  c.c.APIServer.User.regiesterTest - Starting regiesterTest on DESKTOP-K3J1M0C with PID 20756 (F:\code\javacode\Carbontest\target\test-classes started by wing in F:\code\javacode\Carbontest)
+14:54:00.727 [main] DEBUG c.c.APIServer.User.regiesterTest - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+14:54:00.728 [main] INFO  c.c.APIServer.User.regiesterTest - No active profile set, falling back to default profiles: default
+14:54:01.719 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+14:54:01.725 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+14:54:01.727 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+14:54:01.729 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+14:54:01.731 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+14:54:01.732 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+14:54:01.733 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+14:54:01.734 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+14:54:01.736 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+14:54:01.737 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+14:54:01.738 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+14:54:02.575 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:54:03.529 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+14:54:03.638 [main] INFO  c.c.APIServer.User.regiesterTest - Started regiesterTest in 3.358 seconds (JVM running for 4.791)
+14:54:03.852 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/registered
+14:54:03.852 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+14:54:03.857 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","code":"1234","password":"123456"}
+14:54:03.948 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+14:54:03.949 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":400,"error":"Access.failure.general","message":"注册失败,用户名或验证码错误","timestamp":"1629269643460","data":null,"path":null}
+14:54:03.949 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+14:54:03.949 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 06:54:03 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+14:54:03.957 [TestNG-method=regiestertest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"error":"Access.failure.general","message":"注册失败,用户名或验证码错误","status":400,"timestamp":"1629269643460"}
+14:54:03.971 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 准备开始---------
+14:54:03.974 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+14:54:03.974 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+14:54:03.974 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","password":"123456"}
+14:54:03.984 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+14:54:03.984 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":400,"error":"Access.failure.general","message":"没有查询到用户信息","timestamp":"1629269643504","data":null,"path":null}
+14:54:03.984 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+14:54:03.984 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 06:54:03 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+14:54:03.985 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"error":"Access.failure.general","message":"没有查询到用户信息","status":400,"timestamp":"1629269643504"}
+14:54:03.993 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.carbontest.APIServer.BaseLoginTest], using SpringBootContextLoader
+14:54:03.993 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.carbontest.APIServer.BaseLoginTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+14:54:03.993 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.carbontest.APIServer.BaseLoginTest]: BaseLoginTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:54:03.997 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.carbontest.APIServer.APIServiceApplication for test class com.carbontest.APIServer.BaseLoginTest
+14:54:03.999 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e4599c0, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7dffda8b, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3d1f558a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6abdec0e]
+14:54:03.999 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 准备开始---------
+14:54:03.999 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+14:54:04.001 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+14:54:04.001 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+14:54:04.001 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","code":null,"password":"123456"}
+14:54:04.012 [main] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+14:54:04.012 [main] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":400,"error":"Access.failure.general","message":"没有查询到用户信息","timestamp":"1629269643531","data":null,"path":null}
+14:54:04.012 [main] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+14:54:04.012 [main] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 06:54:03 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+14:54:04.012 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"error":"Access.failure.general","message":"没有查询到用户信息","status":400,"timestamp":"1629269643531"}
+14:54:04.034 [main] INFO  c.c.APIServer.User.regiesterTest - 请求放置的用户id：null
+14:54:04.035 [main] INFO  c.c.A.Company.accountRegiesterTest - 请求放置的公司id：null
+14:54:04.178 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+14:54:04.325 [main] DEBUG c.c.A.d.c.T.deleteByUserId - ==>  Preparing: delete from carbon_test.t_user_role where user_id = ? 
+14:54:04.354 [main] DEBUG c.c.A.d.c.T.deleteByUserId - ==> Parameters: null
+14:54:04.357 [main] DEBUG c.c.A.d.c.T.deleteByUserId - <==    Updates: 0
+14:54:04.358 [main] DEBUG c.c.A.d.c.TUserDao.deleteByUserId - ==>  Preparing: delete from carbon_test.t_user where user_id = ? 
+14:54:04.358 [main] DEBUG c.c.A.d.c.TUserDao.deleteByUserId - ==> Parameters: null
+14:54:04.360 [main] DEBUG c.c.A.d.c.TUserDao.deleteByUserId - <==    Updates: 0
+14:54:04.712 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+14:54:04.721 [SpringContextShutdownHook] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+15:37:19.624 [main] INFO  c.c.APIServer.User.loginTest - Starting loginTest on DESKTOP-K3J1M0C with PID 16336 (F:\code\javacode\Carbontest\target\test-classes started by wing in F:\code\javacode\Carbontest)
+15:37:19.625 [main] DEBUG c.c.APIServer.User.loginTest - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+15:37:19.626 [main] INFO  c.c.APIServer.User.loginTest - No active profile set, falling back to default profiles: default
+15:37:20.603 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:37:20.607 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:37:20.609 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:37:20.610 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:37:20.611 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:37:20.613 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:37:20.614 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:37:20.615 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:37:20.616 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:37:20.618 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:37:20.619 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:37:21.446 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+15:37:22.390 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+15:37:22.496 [main] INFO  c.c.APIServer.User.loginTest - Started loginTest in 3.247 seconds (JVM running for 4.583)
+15:37:22.613 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 准备开始---------
+15:37:22.707 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+15:37:22.707 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+15:37:22.710 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","password":"123456"}
+15:37:22.882 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+15:37:22.882 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629272242383","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIyNDIzODIsImV4cCI6MTYyOTg3NzA0Mn0.XVUQz2bhoxyW5gwJeuoPwAxeb2O_aR89emtsIddGzuKZQtRA9TTG2NrRljvoo9psMuhjezmoxS_p0jY6hgqP4Q"},"path":null}
+15:37:22.882 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+15:37:22.882 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 07:37:22 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+15:37:22.892 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIyNDIzODIsImV4cCI6MTYyOTg3NzA0Mn0.XVUQz2bhoxyW5gwJeuoPwAxeb2O_aR89emtsIddGzuKZQtRA9TTG2NrRljvoo9psMuhjezmoxS_p0jY6hgqP4Q"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629272242383"}
+15:37:22.894 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIyNDIzODIsImV4cCI6MTYyOTg3NzA0Mn0.XVUQz2bhoxyW5gwJeuoPwAxeb2O_aR89emtsIddGzuKZQtRA9TTG2NrRljvoo9psMuhjezmoxS_p0jY6hgqP4Q"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629272242383"}
+15:37:22.894 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIyNDIzODIsImV4cCI6MTYyOTg3NzA0Mn0.XVUQz2bhoxyW5gwJeuoPwAxeb2O_aR89emtsIddGzuKZQtRA9TTG2NrRljvoo9psMuhjezmoxS_p0jY6hgqP4Q"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629272242383"}
+15:37:22.894 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIyNDIzODIsImV4cCI6MTYyOTg3NzA0Mn0.XVUQz2bhoxyW5gwJeuoPwAxeb2O_aR89emtsIddGzuKZQtRA9TTG2NrRljvoo9psMuhjezmoxS_p0jY6hgqP4Q"}
+15:37:22.894 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIyNDIzODIsImV4cCI6MTYyOTg3NzA0Mn0.XVUQz2bhoxyW5gwJeuoPwAxeb2O_aR89emtsIddGzuKZQtRA9TTG2NrRljvoo9psMuhjezmoxS_p0jY6hgqP4Q
+15:37:22.904 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.carbontest.APIServer.BaseLoginTest], using SpringBootContextLoader
+15:37:22.905 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.carbontest.APIServer.BaseLoginTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:37:22.905 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.carbontest.APIServer.BaseLoginTest]: BaseLoginTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:37:22.909 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.carbontest.APIServer.APIServiceApplication for test class com.carbontest.APIServer.BaseLoginTest
+15:37:22.911 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4d3c6593, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7426a448, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@516462cc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3456558]
+15:37:22.911 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 准备开始---------
+15:37:22.911 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:37:22.914 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+15:37:22.914 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+15:37:22.914 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","code":null,"password":"123456"}
+15:37:23.041 [main] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+15:37:23.041 [main] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629272242553","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIyNDI1NTEsImV4cCI6MTYyOTg3NzA0Mn0.Gjp5CofECacdnedxWuKojLu_QNZKPytrh6Bkba6elI69djciOLoGZGgGTpxT4iYfbB3MppcuzGI1EAngW4dILA"},"path":null}
+15:37:23.041 [main] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+15:37:23.041 [main] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 07:37:22 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+15:37:23.041 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIyNDI1NTEsImV4cCI6MTYyOTg3NzA0Mn0.Gjp5CofECacdnedxWuKojLu_QNZKPytrh6Bkba6elI69djciOLoGZGgGTpxT4iYfbB3MppcuzGI1EAngW4dILA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629272242553"}
+15:37:23.042 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIyNDI1NTEsImV4cCI6MTYyOTg3NzA0Mn0.Gjp5CofECacdnedxWuKojLu_QNZKPytrh6Bkba6elI69djciOLoGZGgGTpxT4iYfbB3MppcuzGI1EAngW4dILA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629272242553"}
+15:37:23.042 [main] INFO  c.carbontest.APIServer.BaseLoginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIyNDI1NTEsImV4cCI6MTYyOTg3NzA0Mn0.Gjp5CofECacdnedxWuKojLu_QNZKPytrh6Bkba6elI69djciOLoGZGgGTpxT4iYfbB3MppcuzGI1EAngW4dILA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629272242553"}
+15:37:23.042 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIyNDI1NTEsImV4cCI6MTYyOTg3NzA0Mn0.Gjp5CofECacdnedxWuKojLu_QNZKPytrh6Bkba6elI69djciOLoGZGgGTpxT4iYfbB3MppcuzGI1EAngW4dILA"}
+15:37:23.042 [main] INFO  c.carbontest.APIServer.BaseLoginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIyNDI1NTEsImV4cCI6MTYyOTg3NzA0Mn0.Gjp5CofECacdnedxWuKojLu_QNZKPytrh6Bkba6elI69djciOLoGZGgGTpxT4iYfbB3MppcuzGI1EAngW4dILA
+15:37:23.047 [TestNG-method=accountRegiesterTest-1] INFO  c.c.A.Company.accountRegiesterTest - 开始执行---------
+15:37:23.048 [TestNG-method=accountRegiesterTest-1] INFO  c.c.A.Company.accountRegiesterTest - 准备开始---------
+15:37:23.051 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/company/registered
+15:37:23.051 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+15:37:23.051 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"address":"日落大道0000","businessLicense":"https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1627366715691/5MB%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%9B%BE%E7%89%87.jpg","companyName":"服务商公司0000","contact":"8008208822","legalPerson":"法人0000","legalPersonIdCard":"340828199401076700","mail":"test0000@qq.com","phone":"17826830021","servicerId":1472580001,"socialCreditCode":"creditcode00000000"}
+15:37:23.069 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+15:37:23.069 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":400,"error":"Access.failure.general","message":"该统一社会信用证代码已被注册","timestamp":"1629272242581","data":null,"path":null}
+15:37:23.069 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+15:37:23.069 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 07:37:22 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+15:37:23.069 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"error":"Access.failure.general","message":"该统一社会信用证代码已被注册","status":400,"timestamp":"1629272242581"}
+15:37:23.072 [main] INFO  c.c.A.Company.accountRegiesterTest - 请求放置的公司id：null
+15:37:23.410 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+15:38:39.385 [main] INFO  c.c.APIServer.User.loginTest - Starting loginTest on DESKTOP-K3J1M0C with PID 21812 (F:\code\javacode\Carbontest\target\test-classes started by wing in F:\code\javacode\Carbontest)
+15:38:39.386 [main] DEBUG c.c.APIServer.User.loginTest - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+15:38:39.386 [main] INFO  c.c.APIServer.User.loginTest - No active profile set, falling back to default profiles: default
+15:38:40.323 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:38:40.328 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:38:40.330 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:38:40.331 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:38:40.332 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:38:40.334 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:38:40.335 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:38:40.336 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:38:40.337 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:38:40.338 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:38:40.340 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:38:41.157 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+15:38:42.082 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+15:38:42.191 [main] INFO  c.c.APIServer.User.loginTest - Started loginTest in 3.188 seconds (JVM running for 4.564)
+15:38:42.294 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 准备开始---------
+15:38:42.389 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+15:38:42.390 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+15:38:42.397 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","password":"123456"}
+15:38:42.569 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+15:38:42.569 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629272322071","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzMjIwNjksImV4cCI6MTYyOTg3NzEyMn0.APCs_f7A2uvgPM7tLb4urRPzhDxIe0BzeRV1VSVf9dZNzEaaKCvA7rZ4BWfKWCbHmy4-IxmBVx_G_WJ7Y9Rpgg"},"path":null}
+15:38:42.569 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+15:38:42.569 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 07:38:42 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+15:38:42.579 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzMjIwNjksImV4cCI6MTYyOTg3NzEyMn0.APCs_f7A2uvgPM7tLb4urRPzhDxIe0BzeRV1VSVf9dZNzEaaKCvA7rZ4BWfKWCbHmy4-IxmBVx_G_WJ7Y9Rpgg"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629272322071"}
+15:38:42.580 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzMjIwNjksImV4cCI6MTYyOTg3NzEyMn0.APCs_f7A2uvgPM7tLb4urRPzhDxIe0BzeRV1VSVf9dZNzEaaKCvA7rZ4BWfKWCbHmy4-IxmBVx_G_WJ7Y9Rpgg"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629272322071"}
+15:38:42.580 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzMjIwNjksImV4cCI6MTYyOTg3NzEyMn0.APCs_f7A2uvgPM7tLb4urRPzhDxIe0BzeRV1VSVf9dZNzEaaKCvA7rZ4BWfKWCbHmy4-IxmBVx_G_WJ7Y9Rpgg"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629272322071"}
+15:38:42.580 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzMjIwNjksImV4cCI6MTYyOTg3NzEyMn0.APCs_f7A2uvgPM7tLb4urRPzhDxIe0BzeRV1VSVf9dZNzEaaKCvA7rZ4BWfKWCbHmy4-IxmBVx_G_WJ7Y9Rpgg"}
+15:38:42.581 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzMjIwNjksImV4cCI6MTYyOTg3NzEyMn0.APCs_f7A2uvgPM7tLb4urRPzhDxIe0BzeRV1VSVf9dZNzEaaKCvA7rZ4BWfKWCbHmy4-IxmBVx_G_WJ7Y9Rpgg
+15:38:42.593 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.carbontest.APIServer.BaseLoginTest], using SpringBootContextLoader
+15:38:42.594 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.carbontest.APIServer.BaseLoginTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:38:42.594 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.carbontest.APIServer.BaseLoginTest]: BaseLoginTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:38:42.599 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.carbontest.APIServer.APIServiceApplication for test class com.carbontest.APIServer.BaseLoginTest
+15:38:42.601 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@575e572f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@58015e56, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4d3c6593, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7426a448]
+15:38:42.601 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 准备开始---------
+15:38:42.601 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:38:42.604 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+15:38:42.604 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+15:38:42.604 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","code":null,"password":"123456"}
+15:38:42.731 [main] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+15:38:42.731 [main] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629272322242","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzMjIyNDAsImV4cCI6MTYyOTg3NzEyMn0.HEaQWqdUGYxh0airztKKgi6wpkR6zhqIC2eBdrJ5qszy_v0w_vSfi0NDlbkUnuooZFmtgXSLp7RooeLQsncouA"},"path":null}
+15:38:42.731 [main] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+15:38:42.731 [main] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 07:38:42 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+15:38:42.731 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzMjIyNDAsImV4cCI6MTYyOTg3NzEyMn0.HEaQWqdUGYxh0airztKKgi6wpkR6zhqIC2eBdrJ5qszy_v0w_vSfi0NDlbkUnuooZFmtgXSLp7RooeLQsncouA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629272322242"}
+15:38:42.731 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzMjIyNDAsImV4cCI6MTYyOTg3NzEyMn0.HEaQWqdUGYxh0airztKKgi6wpkR6zhqIC2eBdrJ5qszy_v0w_vSfi0NDlbkUnuooZFmtgXSLp7RooeLQsncouA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629272322242"}
+15:38:42.731 [main] INFO  c.carbontest.APIServer.BaseLoginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzMjIyNDAsImV4cCI6MTYyOTg3NzEyMn0.HEaQWqdUGYxh0airztKKgi6wpkR6zhqIC2eBdrJ5qszy_v0w_vSfi0NDlbkUnuooZFmtgXSLp7RooeLQsncouA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629272322242"}
+15:38:42.731 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzMjIyNDAsImV4cCI6MTYyOTg3NzEyMn0.HEaQWqdUGYxh0airztKKgi6wpkR6zhqIC2eBdrJ5qszy_v0w_vSfi0NDlbkUnuooZFmtgXSLp7RooeLQsncouA"}
+15:38:42.731 [main] INFO  c.carbontest.APIServer.BaseLoginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzMjIyNDAsImV4cCI6MTYyOTg3NzEyMn0.HEaQWqdUGYxh0airztKKgi6wpkR6zhqIC2eBdrJ5qszy_v0w_vSfi0NDlbkUnuooZFmtgXSLp7RooeLQsncouA
+15:38:42.736 [TestNG-method=accountRegiesterTest-1] INFO  c.c.A.Company.accountRegiesterTest - 开始执行---------
+15:38:42.736 [TestNG-method=accountRegiesterTest-1] INFO  c.c.A.Company.accountRegiesterTest - 准备开始---------
+15:38:42.741 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/company/registered
+15:38:42.741 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+15:38:42.741 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"address":"日落大道0000","businessLicense":"https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1627366715691/5MB%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%9B%BE%E7%89%87.jpg","companyName":"服务商公司0000","contact":"8008208822","legalPerson":"法人0000","legalPersonIdCard":"340828199401076700","mail":"test0000@qq.com","phone":"17826830021","servicerId":1472580001,"socialCreditCode":"creditcode00000000"}
+15:38:42.760 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+15:38:42.760 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":400,"error":"Access.failure.general","message":"获取用户信息异常","timestamp":"1629272322272","data":null,"path":null}
+15:38:42.760 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+15:38:42.760 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 07:38:42 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+15:38:42.760 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"error":"Access.failure.general","message":"获取用户信息异常","status":400,"timestamp":"1629272322272"}
+15:38:42.763 [main] INFO  c.c.A.Company.accountRegiesterTest - 请求放置的公司id：null
+15:38:43.092 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+15:39:30.042 [main] INFO  c.c.APIServer.User.loginTest - Starting loginTest on DESKTOP-K3J1M0C with PID 12140 (F:\code\javacode\Carbontest\target\test-classes started by wing in F:\code\javacode\Carbontest)
+15:39:30.043 [main] DEBUG c.c.APIServer.User.loginTest - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+15:39:30.044 [main] INFO  c.c.APIServer.User.loginTest - No active profile set, falling back to default profiles: default
+15:39:31.014 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:39:31.018 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:39:31.020 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:39:31.023 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:39:31.024 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:39:31.025 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:39:31.026 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:39:31.028 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:39:31.029 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:39:31.030 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:39:31.031 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:39:31.885 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+15:39:32.867 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+15:39:32.981 [main] INFO  c.c.APIServer.User.loginTest - Started loginTest in 3.296 seconds (JVM running for 4.683)
+15:39:33.112 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 准备开始---------
+15:39:33.205 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+15:39:33.205 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+15:39:33.208 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","password":"123456"}
+15:39:33.411 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+15:39:33.411 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629272372901","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzNzI5MDAsImV4cCI6MTYyOTg3NzE3Mn0.p_iBpR6WN3uc9gO0G2OPlMPdhk8yV_OQHwd9RH6-2ZLe4d92tAnROwcYtoicGNLD98zfxeWv2etQ3_xmJ21hQw"},"path":null}
+15:39:33.411 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+15:39:33.411 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 07:39:32 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+15:39:33.420 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzNzI5MDAsImV4cCI6MTYyOTg3NzE3Mn0.p_iBpR6WN3uc9gO0G2OPlMPdhk8yV_OQHwd9RH6-2ZLe4d92tAnROwcYtoicGNLD98zfxeWv2etQ3_xmJ21hQw"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629272372901"}
+15:39:33.423 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzNzI5MDAsImV4cCI6MTYyOTg3NzE3Mn0.p_iBpR6WN3uc9gO0G2OPlMPdhk8yV_OQHwd9RH6-2ZLe4d92tAnROwcYtoicGNLD98zfxeWv2etQ3_xmJ21hQw"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629272372901"}
+15:39:33.423 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzNzI5MDAsImV4cCI6MTYyOTg3NzE3Mn0.p_iBpR6WN3uc9gO0G2OPlMPdhk8yV_OQHwd9RH6-2ZLe4d92tAnROwcYtoicGNLD98zfxeWv2etQ3_xmJ21hQw"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629272372901"}
+15:39:33.423 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzNzI5MDAsImV4cCI6MTYyOTg3NzE3Mn0.p_iBpR6WN3uc9gO0G2OPlMPdhk8yV_OQHwd9RH6-2ZLe4d92tAnROwcYtoicGNLD98zfxeWv2etQ3_xmJ21hQw"}
+15:39:33.423 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzNzI5MDAsImV4cCI6MTYyOTg3NzE3Mn0.p_iBpR6WN3uc9gO0G2OPlMPdhk8yV_OQHwd9RH6-2ZLe4d92tAnROwcYtoicGNLD98zfxeWv2etQ3_xmJ21hQw
+15:39:33.435 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.carbontest.APIServer.BaseLoginTest], using SpringBootContextLoader
+15:39:33.435 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.carbontest.APIServer.BaseLoginTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:39:33.436 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.carbontest.APIServer.BaseLoginTest]: BaseLoginTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:39:33.440 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.carbontest.APIServer.APIServiceApplication for test class com.carbontest.APIServer.BaseLoginTest
+15:39:33.442 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@42aae04d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@43bf5397, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@575e572f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@58015e56]
+15:39:33.442 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 准备开始---------
+15:39:33.442 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+15:39:33.446 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+15:39:33.446 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+15:39:33.446 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","code":null,"password":"123456"}
+15:39:33.571 [main] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+15:39:33.572 [main] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629272373082","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzNzMwODEsImV4cCI6MTYyOTg3NzE3M30.rXh7M_esr_aXuOhAdbH9jPkcnDg3Te4jsM2Cpc8MLqPLlJg-y5pgSCZLbJCtjezQqb0taewL3sLAmX_iONnzBA"},"path":null}
+15:39:33.572 [main] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+15:39:33.572 [main] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 07:39:32 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+15:39:33.572 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzNzMwODEsImV4cCI6MTYyOTg3NzE3M30.rXh7M_esr_aXuOhAdbH9jPkcnDg3Te4jsM2Cpc8MLqPLlJg-y5pgSCZLbJCtjezQqb0taewL3sLAmX_iONnzBA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629272373082"}
+15:39:33.572 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzNzMwODEsImV4cCI6MTYyOTg3NzE3M30.rXh7M_esr_aXuOhAdbH9jPkcnDg3Te4jsM2Cpc8MLqPLlJg-y5pgSCZLbJCtjezQqb0taewL3sLAmX_iONnzBA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629272373082"}
+15:39:33.572 [main] INFO  c.carbontest.APIServer.BaseLoginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzNzMwODEsImV4cCI6MTYyOTg3NzE3M30.rXh7M_esr_aXuOhAdbH9jPkcnDg3Te4jsM2Cpc8MLqPLlJg-y5pgSCZLbJCtjezQqb0taewL3sLAmX_iONnzBA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629272373082"}
+15:39:33.572 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzNzMwODEsImV4cCI6MTYyOTg3NzE3M30.rXh7M_esr_aXuOhAdbH9jPkcnDg3Te4jsM2Cpc8MLqPLlJg-y5pgSCZLbJCtjezQqb0taewL3sLAmX_iONnzBA"}
+15:39:33.572 [main] INFO  c.carbontest.APIServer.BaseLoginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzIzNzMwODEsImV4cCI6MTYyOTg3NzE3M30.rXh7M_esr_aXuOhAdbH9jPkcnDg3Te4jsM2Cpc8MLqPLlJg-y5pgSCZLbJCtjezQqb0taewL3sLAmX_iONnzBA
+15:39:33.577 [TestNG-method=accountRegiesterTest-1] INFO  c.c.A.Company.accountRegiesterTest - 开始执行---------
+15:39:33.578 [TestNG-method=accountRegiesterTest-1] INFO  c.c.A.Company.accountRegiesterTest - 准备开始---------
+15:39:33.581 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/company/registered
+15:39:33.581 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+15:39:33.581 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"address":"日落大道0000","businessLicense":"https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1627366715691/5MB%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%9B%BE%E7%89%87.jpg","companyName":"服务商公司0000","contact":"8008208822","legalPerson":"法人0000","legalPersonIdCard":"340828199401076700","mail":"test0000@qq.com","phone":"17826830021","servicerId":1472580001,"socialCreditCode":"creditcode00000000"}
+15:39:33.598 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+15:39:33.599 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":400,"error":"Access.failure.general","message":"获取用户信息异常","timestamp":"1629272373109","data":null,"path":null}
+15:39:33.599 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+15:39:33.599 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 07:39:32 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+15:39:33.599 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"error":"Access.failure.general","message":"获取用户信息异常","status":400,"timestamp":"1629272373109"}
+15:39:33.602 [main] INFO  c.c.A.Company.accountRegiesterTest - 请求放置的公司id：null
+15:39:33.902 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+16:05:54.553 [main] INFO  c.c.APIServer.User.loginTest - Starting loginTest on DESKTOP-K3J1M0C with PID 22956 (F:\code\javacode\Carbontest\target\test-classes started by wing in F:\code\javacode\Carbontest)
+16:05:54.554 [main] DEBUG c.c.APIServer.User.loginTest - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+16:05:54.555 [main] INFO  c.c.APIServer.User.loginTest - No active profile set, falling back to default profiles: default
+16:05:55.647 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+16:05:55.652 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+16:05:55.654 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+16:05:55.655 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+16:05:55.657 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+16:05:55.658 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+16:05:55.661 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+16:05:55.663 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+16:05:55.665 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+16:05:55.666 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+16:05:55.667 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+16:05:56.565 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:05:57.573 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:05:57.687 [main] INFO  c.c.APIServer.User.loginTest - Started loginTest in 3.552 seconds (JVM running for 5.072)
+16:05:57.807 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 准备开始---------
+16:05:57.911 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+16:05:57.911 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+16:05:57.914 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","password":"123456"}
+16:05:58.084 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+16:05:58.084 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629273957578","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzM5NTc1NzYsImV4cCI6MTYyOTg3ODc1N30.EgHa_LkHQxOr-o-AzQMjkY-mu31zobh9gWjnL1HJgSpS7hSLzRNL3qAgMUOw17nmY4PHpsMVRHERMJk3E8HJgQ"},"path":null}
+16:05:58.084 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+16:05:58.084 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 08:05:57 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+16:05:58.097 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzM5NTc1NzYsImV4cCI6MTYyOTg3ODc1N30.EgHa_LkHQxOr-o-AzQMjkY-mu31zobh9gWjnL1HJgSpS7hSLzRNL3qAgMUOw17nmY4PHpsMVRHERMJk3E8HJgQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629273957578"}
+16:05:58.100 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzM5NTc1NzYsImV4cCI6MTYyOTg3ODc1N30.EgHa_LkHQxOr-o-AzQMjkY-mu31zobh9gWjnL1HJgSpS7hSLzRNL3qAgMUOw17nmY4PHpsMVRHERMJk3E8HJgQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629273957578"}
+16:05:58.100 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzM5NTc1NzYsImV4cCI6MTYyOTg3ODc1N30.EgHa_LkHQxOr-o-AzQMjkY-mu31zobh9gWjnL1HJgSpS7hSLzRNL3qAgMUOw17nmY4PHpsMVRHERMJk3E8HJgQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629273957578"}
+16:05:58.100 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzM5NTc1NzYsImV4cCI6MTYyOTg3ODc1N30.EgHa_LkHQxOr-o-AzQMjkY-mu31zobh9gWjnL1HJgSpS7hSLzRNL3qAgMUOw17nmY4PHpsMVRHERMJk3E8HJgQ"}
+16:05:58.100 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzM5NTc1NzYsImV4cCI6MTYyOTg3ODc1N30.EgHa_LkHQxOr-o-AzQMjkY-mu31zobh9gWjnL1HJgSpS7hSLzRNL3qAgMUOw17nmY4PHpsMVRHERMJk3E8HJgQ
+16:05:58.113 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.carbontest.APIServer.BaseLoginTest], using SpringBootContextLoader
+16:05:58.114 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.carbontest.APIServer.BaseLoginTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:05:58.114 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.carbontest.APIServer.BaseLoginTest]: BaseLoginTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:05:58.118 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.carbontest.APIServer.APIServiceApplication for test class com.carbontest.APIServer.BaseLoginTest
+16:05:58.120 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4d3c6593, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7426a448, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@516462cc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3456558]
+16:05:58.120 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 准备开始---------
+16:05:58.121 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+16:05:58.123 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+16:05:58.123 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+16:05:58.123 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","code":null,"password":"123456"}
+16:05:58.249 [main] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+16:05:58.250 [main] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629273957755","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzM5NTc3NTQsImV4cCI6MTYyOTg3ODc1N30.TecbYZN38Na4ZBM3lC_q_VUWQqvq-4QLjUSPbcmX-vOlPD-XmIWf6dyYiBpaHVF4awbZjYh2ZiWxhWX4WDnsAA"},"path":null}
+16:05:58.250 [main] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+16:05:58.250 [main] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 08:05:57 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+16:05:58.250 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzM5NTc3NTQsImV4cCI6MTYyOTg3ODc1N30.TecbYZN38Na4ZBM3lC_q_VUWQqvq-4QLjUSPbcmX-vOlPD-XmIWf6dyYiBpaHVF4awbZjYh2ZiWxhWX4WDnsAA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629273957755"}
+16:05:58.250 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzM5NTc3NTQsImV4cCI6MTYyOTg3ODc1N30.TecbYZN38Na4ZBM3lC_q_VUWQqvq-4QLjUSPbcmX-vOlPD-XmIWf6dyYiBpaHVF4awbZjYh2ZiWxhWX4WDnsAA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629273957755"}
+16:05:58.250 [main] INFO  c.carbontest.APIServer.BaseLoginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzM5NTc3NTQsImV4cCI6MTYyOTg3ODc1N30.TecbYZN38Na4ZBM3lC_q_VUWQqvq-4QLjUSPbcmX-vOlPD-XmIWf6dyYiBpaHVF4awbZjYh2ZiWxhWX4WDnsAA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629273957755"}
+16:05:58.250 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzM5NTc3NTQsImV4cCI6MTYyOTg3ODc1N30.TecbYZN38Na4ZBM3lC_q_VUWQqvq-4QLjUSPbcmX-vOlPD-XmIWf6dyYiBpaHVF4awbZjYh2ZiWxhWX4WDnsAA"}
+16:05:58.250 [main] INFO  c.carbontest.APIServer.BaseLoginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyNzM5NTc3NTQsImV4cCI6MTYyOTg3ODc1N30.TecbYZN38Na4ZBM3lC_q_VUWQqvq-4QLjUSPbcmX-vOlPD-XmIWf6dyYiBpaHVF4awbZjYh2ZiWxhWX4WDnsAA
+16:05:58.255 [TestNG-method=accountRegiesterTest-1] INFO  c.c.A.Company.accountRegiesterTest - 开始执行---------
+16:05:58.256 [TestNG-method=accountRegiesterTest-1] INFO  c.c.A.Company.accountRegiesterTest - 准备开始---------
+16:05:58.260 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/company/registered
+16:05:58.260 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+16:05:58.261 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"address":"日落大道0000","businessLicense":"https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1627366715691/5MB%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%9B%BE%E7%89%87.jpg","companyName":"服务商公司0000","contact":"8008208822","legalPerson":"法人0000","legalPersonIdCard":"340828199401076700","mail":"test0000@qq.com","phone":"17826830021","servicerId":1472580001,"socialCreditCode":"creditcode00000000"}
+16:05:58.278 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+16:05:58.278 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":400,"error":"Access.failure.general","message":"公司名称已存在","timestamp":"1629273957784","data":null,"path":null}
+16:05:58.278 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+16:05:58.278 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 08:05:57 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+16:05:58.278 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"error":"Access.failure.general","message":"公司名称已存在","status":400,"timestamp":"1629273957784"}
+16:05:58.281 [main] INFO  c.c.A.Company.accountRegiesterTest - 请求放置的公司id：null
+16:05:58.648 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+17:52:55.163 [main] INFO  c.c.APIServer.User.loginTest - Starting loginTest on DESKTOP-K3J1M0C with PID 19808 (F:\code\javacode\Carbontest\target\test-classes started by wing in F:\code\javacode\Carbontest)
+17:52:55.165 [main] DEBUG c.c.APIServer.User.loginTest - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+17:52:55.165 [main] INFO  c.c.APIServer.User.loginTest - No active profile set, falling back to default profiles: default
+17:52:56.135 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:52:56.141 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:52:56.143 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:52:56.144 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:52:56.145 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:52:56.147 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:52:56.149 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:52:56.151 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:52:56.152 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:52:56.153 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:52:56.154 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:52:57.019 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+17:52:57.972 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+17:52:58.091 [main] INFO  c.c.APIServer.User.loginTest - Started loginTest in 3.311 seconds (JVM running for 4.695)
+17:52:58.219 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 准备开始---------
+17:52:58.318 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+17:52:58.318 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+17:52:58.323 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","password":"123456"}
+17:52:58.514 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+17:52:58.515 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629280377972","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODAzNzc5NjksImV4cCI6MTYyOTg4NTE3N30.V3nWuZ58Cx5aCDVDXXJ8UpNup6vMfOlNTFZnkquWL236lkrIb1WzBD6V7bCLkEwwx_sTpT1W-LQDwhZ33yDa7Q"},"path":null}
+17:52:58.515 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+17:52:58.515 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 09:52:57 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+17:52:58.533 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODAzNzc5NjksImV4cCI6MTYyOTg4NTE3N30.V3nWuZ58Cx5aCDVDXXJ8UpNup6vMfOlNTFZnkquWL236lkrIb1WzBD6V7bCLkEwwx_sTpT1W-LQDwhZ33yDa7Q"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280377972"}
+17:52:58.536 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODAzNzc5NjksImV4cCI6MTYyOTg4NTE3N30.V3nWuZ58Cx5aCDVDXXJ8UpNup6vMfOlNTFZnkquWL236lkrIb1WzBD6V7bCLkEwwx_sTpT1W-LQDwhZ33yDa7Q"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280377972"}
+17:52:58.536 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODAzNzc5NjksImV4cCI6MTYyOTg4NTE3N30.V3nWuZ58Cx5aCDVDXXJ8UpNup6vMfOlNTFZnkquWL236lkrIb1WzBD6V7bCLkEwwx_sTpT1W-LQDwhZ33yDa7Q"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280377972"}
+17:52:58.536 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODAzNzc5NjksImV4cCI6MTYyOTg4NTE3N30.V3nWuZ58Cx5aCDVDXXJ8UpNup6vMfOlNTFZnkquWL236lkrIb1WzBD6V7bCLkEwwx_sTpT1W-LQDwhZ33yDa7Q"}
+17:52:58.536 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODAzNzc5NjksImV4cCI6MTYyOTg4NTE3N30.V3nWuZ58Cx5aCDVDXXJ8UpNup6vMfOlNTFZnkquWL236lkrIb1WzBD6V7bCLkEwwx_sTpT1W-LQDwhZ33yDa7Q
+17:52:58.553 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.carbontest.APIServer.BaseLoginTest], using SpringBootContextLoader
+17:52:58.555 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.carbontest.APIServer.BaseLoginTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:52:58.555 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.carbontest.APIServer.BaseLoginTest]: BaseLoginTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:52:58.562 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.carbontest.APIServer.APIServiceApplication for test class com.carbontest.APIServer.BaseLoginTest
+17:52:58.566 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1e3e1014, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3679d92e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@47b11ec7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@58fa5769]
+17:52:58.567 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 准备开始---------
+17:52:58.567 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:52:58.572 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+17:52:58.572 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+17:52:58.572 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","code":null,"password":"123456"}
+17:52:58.699 [main] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+17:52:58.700 [main] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629280378186","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODAzNzgxODUsImV4cCI6MTYyOTg4NTE3OH0.weH-mf8jdgyq8TFzjYyN3BSX-L9f5gg55caOVR0OQdq1lr-8Hv1GvWNFP_ibCkJeBcE12eRVBZKBMit-hGnomg"},"path":null}
+17:52:58.700 [main] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+17:52:58.701 [main] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 09:52:57 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+17:52:58.701 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODAzNzgxODUsImV4cCI6MTYyOTg4NTE3OH0.weH-mf8jdgyq8TFzjYyN3BSX-L9f5gg55caOVR0OQdq1lr-8Hv1GvWNFP_ibCkJeBcE12eRVBZKBMit-hGnomg"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280378186"}
+17:52:58.702 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODAzNzgxODUsImV4cCI6MTYyOTg4NTE3OH0.weH-mf8jdgyq8TFzjYyN3BSX-L9f5gg55caOVR0OQdq1lr-8Hv1GvWNFP_ibCkJeBcE12eRVBZKBMit-hGnomg"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280378186"}
+17:52:58.702 [main] INFO  c.carbontest.APIServer.BaseLoginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODAzNzgxODUsImV4cCI6MTYyOTg4NTE3OH0.weH-mf8jdgyq8TFzjYyN3BSX-L9f5gg55caOVR0OQdq1lr-8Hv1GvWNFP_ibCkJeBcE12eRVBZKBMit-hGnomg"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280378186"}
+17:52:58.703 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODAzNzgxODUsImV4cCI6MTYyOTg4NTE3OH0.weH-mf8jdgyq8TFzjYyN3BSX-L9f5gg55caOVR0OQdq1lr-8Hv1GvWNFP_ibCkJeBcE12eRVBZKBMit-hGnomg"}
+17:52:58.703 [main] INFO  c.carbontest.APIServer.BaseLoginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODAzNzgxODUsImV4cCI6MTYyOTg4NTE3OH0.weH-mf8jdgyq8TFzjYyN3BSX-L9f5gg55caOVR0OQdq1lr-8Hv1GvWNFP_ibCkJeBcE12eRVBZKBMit-hGnomg
+17:52:58.720 [TestNG-method=accountRegiesterTest-1] INFO  c.c.A.Company.accountRegiesterTest - 开始执行---------
+17:52:58.721 [TestNG-method=accountRegiesterTest-1] INFO  c.c.A.Company.accountRegiesterTest - 准备开始---------
+17:52:58.733 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/company/registered
+17:52:58.733 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+17:52:58.734 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"address":"日落大道0000","businessLicense":"https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1627366715691/5MB%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%9B%BE%E7%89%87.jpg","companyName":"服务商公司0000","contact":"8008208822","legalPerson":"法人0000","legalPersonIdCard":"340828199401076700","mail":"test0000@qq.com","phone":"17826830021","servicerId":1472580001,"socialCreditCode":"creditcode00000000"}
+17:52:58.755 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+17:52:58.755 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":400,"error":"Access.failure.general","message":"获取用户信息异常","timestamp":"1629280378243","data":null,"path":null}
+17:52:58.755 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+17:52:58.755 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 09:52:57 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+17:52:58.755 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"error":"Access.failure.general","message":"获取用户信息异常","status":400,"timestamp":"1629280378243"}
+17:52:58.759 [main] INFO  c.c.A.Company.accountRegiesterTest - 请求放置的公司id：null
+17:52:59.090 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+17:55:42.868 [main] INFO  c.c.APIServer.User.loginTest - Starting loginTest on DESKTOP-K3J1M0C with PID 14320 (F:\code\javacode\Carbontest\target\test-classes started by wing in F:\code\javacode\Carbontest)
+17:55:42.869 [main] DEBUG c.c.APIServer.User.loginTest - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+17:55:42.870 [main] INFO  c.c.APIServer.User.loginTest - No active profile set, falling back to default profiles: default
+17:55:44.055 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:55:44.062 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:55:44.064 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:55:44.065 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:55:44.067 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:55:44.069 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:55:44.071 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:55:44.072 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:55:44.074 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:55:44.075 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:55:44.076 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:55:44.932 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+17:55:45.876 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+17:55:45.984 [main] INFO  c.c.APIServer.User.loginTest - Started loginTest in 3.501 seconds (JVM running for 4.929)
+17:55:46.106 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 准备开始---------
+17:55:46.212 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+17:55:46.212 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+17:55:46.216 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","password":"123456"}
+17:55:46.416 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+17:55:46.417 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629280545869","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1NDU4NjgsImV4cCI6MTYyOTg4NTM0NX0.dQtvd_ZALWJUTwoQJO4f-OGUIlP0LTgbC6Gly7-GXyysSiqEL844cjesVQ0J2UCEMwJkln1TJ4rA8WbgfMpgCw"},"path":null}
+17:55:46.417 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+17:55:46.418 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 09:55:45 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+17:55:46.434 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1NDU4NjgsImV4cCI6MTYyOTg4NTM0NX0.dQtvd_ZALWJUTwoQJO4f-OGUIlP0LTgbC6Gly7-GXyysSiqEL844cjesVQ0J2UCEMwJkln1TJ4rA8WbgfMpgCw"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280545869"}
+17:55:46.437 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1NDU4NjgsImV4cCI6MTYyOTg4NTM0NX0.dQtvd_ZALWJUTwoQJO4f-OGUIlP0LTgbC6Gly7-GXyysSiqEL844cjesVQ0J2UCEMwJkln1TJ4rA8WbgfMpgCw"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280545869"}
+17:55:46.437 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1NDU4NjgsImV4cCI6MTYyOTg4NTM0NX0.dQtvd_ZALWJUTwoQJO4f-OGUIlP0LTgbC6Gly7-GXyysSiqEL844cjesVQ0J2UCEMwJkln1TJ4rA8WbgfMpgCw"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280545869"}
+17:55:46.437 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1NDU4NjgsImV4cCI6MTYyOTg4NTM0NX0.dQtvd_ZALWJUTwoQJO4f-OGUIlP0LTgbC6Gly7-GXyysSiqEL844cjesVQ0J2UCEMwJkln1TJ4rA8WbgfMpgCw"}
+17:55:46.437 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1NDU4NjgsImV4cCI6MTYyOTg4NTM0NX0.dQtvd_ZALWJUTwoQJO4f-OGUIlP0LTgbC6Gly7-GXyysSiqEL844cjesVQ0J2UCEMwJkln1TJ4rA8WbgfMpgCw
+17:55:46.452 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.carbontest.APIServer.BaseLoginTest], using SpringBootContextLoader
+17:55:46.453 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.carbontest.APIServer.BaseLoginTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:55:46.454 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.carbontest.APIServer.BaseLoginTest]: BaseLoginTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:55:46.460 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.carbontest.APIServer.APIServiceApplication for test class com.carbontest.APIServer.BaseLoginTest
+17:55:46.464 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@575e572f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@58015e56, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4d3c6593, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7426a448]
+17:55:46.464 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 准备开始---------
+17:55:46.464 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:55:46.470 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+17:55:46.470 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+17:55:46.470 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","code":null,"password":"123456"}
+17:55:46.597 [main] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+17:55:46.597 [main] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629280546083","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1NDYwODIsImV4cCI6MTYyOTg4NTM0Nn0.XKYWY2VgIsRHdMezXFxzXn1Szy3dD1O0EZBgZND5prhANczZ0o_4ia7dci-_0KWeB-uwLlt5InVW4oKTD2IbUA"},"path":null}
+17:55:46.597 [main] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+17:55:46.597 [main] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 09:55:45 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+17:55:46.598 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1NDYwODIsImV4cCI6MTYyOTg4NTM0Nn0.XKYWY2VgIsRHdMezXFxzXn1Szy3dD1O0EZBgZND5prhANczZ0o_4ia7dci-_0KWeB-uwLlt5InVW4oKTD2IbUA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280546083"}
+17:55:46.598 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1NDYwODIsImV4cCI6MTYyOTg4NTM0Nn0.XKYWY2VgIsRHdMezXFxzXn1Szy3dD1O0EZBgZND5prhANczZ0o_4ia7dci-_0KWeB-uwLlt5InVW4oKTD2IbUA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280546083"}
+17:55:46.598 [main] INFO  c.carbontest.APIServer.BaseLoginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1NDYwODIsImV4cCI6MTYyOTg4NTM0Nn0.XKYWY2VgIsRHdMezXFxzXn1Szy3dD1O0EZBgZND5prhANczZ0o_4ia7dci-_0KWeB-uwLlt5InVW4oKTD2IbUA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280546083"}
+17:55:46.598 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1NDYwODIsImV4cCI6MTYyOTg4NTM0Nn0.XKYWY2VgIsRHdMezXFxzXn1Szy3dD1O0EZBgZND5prhANczZ0o_4ia7dci-_0KWeB-uwLlt5InVW4oKTD2IbUA"}
+17:55:46.599 [main] INFO  c.carbontest.APIServer.BaseLoginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1NDYwODIsImV4cCI6MTYyOTg4NTM0Nn0.XKYWY2VgIsRHdMezXFxzXn1Szy3dD1O0EZBgZND5prhANczZ0o_4ia7dci-_0KWeB-uwLlt5InVW4oKTD2IbUA
+17:55:46.970 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+17:56:25.496 [main] INFO  c.c.APIServer.User.loginTest - Starting loginTest on DESKTOP-K3J1M0C with PID 12060 (F:\code\javacode\Carbontest\target\test-classes started by wing in F:\code\javacode\Carbontest)
+17:56:25.498 [main] DEBUG c.c.APIServer.User.loginTest - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+17:56:25.499 [main] INFO  c.c.APIServer.User.loginTest - No active profile set, falling back to default profiles: default
+17:56:26.595 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:56:26.602 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:56:26.604 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:56:26.606 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:56:26.608 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:56:26.610 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:56:26.613 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:56:26.616 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:56:26.618 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:56:26.620 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:56:26.622 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:56:27.516 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+17:56:28.484 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+17:56:28.592 [main] INFO  c.c.APIServer.User.loginTest - Started loginTest in 3.59 seconds (JVM running for 5.145)
+17:56:28.715 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 准备开始---------
+17:56:28.804 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+17:56:28.804 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+17:56:28.808 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","password":"123456"}
+17:56:28.976 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+17:56:28.976 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629280588454","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1ODg0NTIsImV4cCI6MTYyOTg4NTM4OH0.2VKkf9SSp_vcKf7k703OPwqVluEKo8ln3qxzq0XltSkRgZ--POa5caWcOIDt2rx2SWc4ma65TRi6V59LZDSFuQ"},"path":null}
+17:56:28.976 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+17:56:28.976 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 09:56:28 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+17:56:28.986 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1ODg0NTIsImV4cCI6MTYyOTg4NTM4OH0.2VKkf9SSp_vcKf7k703OPwqVluEKo8ln3qxzq0XltSkRgZ--POa5caWcOIDt2rx2SWc4ma65TRi6V59LZDSFuQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280588454"}
+17:56:28.989 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1ODg0NTIsImV4cCI6MTYyOTg4NTM4OH0.2VKkf9SSp_vcKf7k703OPwqVluEKo8ln3qxzq0XltSkRgZ--POa5caWcOIDt2rx2SWc4ma65TRi6V59LZDSFuQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280588454"}
+17:56:28.989 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1ODg0NTIsImV4cCI6MTYyOTg4NTM4OH0.2VKkf9SSp_vcKf7k703OPwqVluEKo8ln3qxzq0XltSkRgZ--POa5caWcOIDt2rx2SWc4ma65TRi6V59LZDSFuQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280588454"}
+17:56:28.989 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1ODg0NTIsImV4cCI6MTYyOTg4NTM4OH0.2VKkf9SSp_vcKf7k703OPwqVluEKo8ln3qxzq0XltSkRgZ--POa5caWcOIDt2rx2SWc4ma65TRi6V59LZDSFuQ"}
+17:56:28.989 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1ODg0NTIsImV4cCI6MTYyOTg4NTM4OH0.2VKkf9SSp_vcKf7k703OPwqVluEKo8ln3qxzq0XltSkRgZ--POa5caWcOIDt2rx2SWc4ma65TRi6V59LZDSFuQ
+17:56:29.000 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.carbontest.APIServer.BaseLoginTest], using SpringBootContextLoader
+17:56:29.000 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.carbontest.APIServer.BaseLoginTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:56:29.001 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.carbontest.APIServer.BaseLoginTest]: BaseLoginTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:56:29.005 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.carbontest.APIServer.APIServiceApplication for test class com.carbontest.APIServer.BaseLoginTest
+17:56:29.007 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4d3c6593, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7426a448, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@516462cc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3456558]
+17:56:29.008 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 准备开始---------
+17:56:29.008 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:56:29.011 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+17:56:29.011 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+17:56:29.011 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","code":null,"password":"123456"}
+17:56:29.138 [main] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+17:56:29.138 [main] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629280588625","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1ODg2MjMsImV4cCI6MTYyOTg4NTM4OH0.NKIl4zWhM2nJ6aW-mFkmVEliB6FjFoMUGZX8AP_GF8g3wBSyxI08m_KFq3yPD-t54MuQKO0oyG5pW1_nssGbsg"},"path":null}
+17:56:29.138 [main] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+17:56:29.138 [main] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 09:56:28 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+17:56:29.139 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1ODg2MjMsImV4cCI6MTYyOTg4NTM4OH0.NKIl4zWhM2nJ6aW-mFkmVEliB6FjFoMUGZX8AP_GF8g3wBSyxI08m_KFq3yPD-t54MuQKO0oyG5pW1_nssGbsg"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280588625"}
+17:56:29.139 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1ODg2MjMsImV4cCI6MTYyOTg4NTM4OH0.NKIl4zWhM2nJ6aW-mFkmVEliB6FjFoMUGZX8AP_GF8g3wBSyxI08m_KFq3yPD-t54MuQKO0oyG5pW1_nssGbsg"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280588625"}
+17:56:29.139 [main] INFO  c.carbontest.APIServer.BaseLoginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1ODg2MjMsImV4cCI6MTYyOTg4NTM4OH0.NKIl4zWhM2nJ6aW-mFkmVEliB6FjFoMUGZX8AP_GF8g3wBSyxI08m_KFq3yPD-t54MuQKO0oyG5pW1_nssGbsg"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280588625"}
+17:56:29.139 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1ODg2MjMsImV4cCI6MTYyOTg4NTM4OH0.NKIl4zWhM2nJ6aW-mFkmVEliB6FjFoMUGZX8AP_GF8g3wBSyxI08m_KFq3yPD-t54MuQKO0oyG5pW1_nssGbsg"}
+17:56:29.139 [main] INFO  c.carbontest.APIServer.BaseLoginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA1ODg2MjMsImV4cCI6MTYyOTg4NTM4OH0.NKIl4zWhM2nJ6aW-mFkmVEliB6FjFoMUGZX8AP_GF8g3wBSyxI08m_KFq3yPD-t54MuQKO0oyG5pW1_nssGbsg
+17:56:29.465 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+17:57:05.401 [main] INFO  c.c.APIServer.User.loginTest - Starting loginTest on DESKTOP-K3J1M0C with PID 24852 (F:\code\javacode\Carbontest\target\test-classes started by wing in F:\code\javacode\Carbontest)
+17:57:05.402 [main] DEBUG c.c.APIServer.User.loginTest - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+17:57:05.402 [main] INFO  c.c.APIServer.User.loginTest - No active profile set, falling back to default profiles: default
+17:57:06.419 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:57:06.424 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:57:06.426 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:57:06.428 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:57:06.431 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:57:06.433 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:57:06.435 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:57:06.438 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:57:06.440 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:57:06.442 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:57:06.444 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:57:07.256 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+17:57:08.241 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+17:57:08.351 [main] INFO  c.c.APIServer.User.loginTest - Started loginTest in 3.337 seconds (JVM running for 4.722)
+17:57:08.478 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 准备开始---------
+17:57:08.574 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+17:57:08.574 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+17:57:08.577 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","password":"123456"}
+17:57:08.752 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+17:57:08.752 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629280628227","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA2MjgyMjYsImV4cCI6MTYyOTg4NTQyOH0.tKc7FRwEb7JFJZTRPxFZ5Edh29r0VdHqp-FQTc4SezGQQVsJ_n7qomFCtvt8ezmuXPLjbqik_N7QONw81M7WbQ"},"path":null}
+17:57:08.752 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+17:57:08.752 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 09:57:08 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+17:57:08.762 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA2MjgyMjYsImV4cCI6MTYyOTg4NTQyOH0.tKc7FRwEb7JFJZTRPxFZ5Edh29r0VdHqp-FQTc4SezGQQVsJ_n7qomFCtvt8ezmuXPLjbqik_N7QONw81M7WbQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280628227"}
+17:57:08.765 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA2MjgyMjYsImV4cCI6MTYyOTg4NTQyOH0.tKc7FRwEb7JFJZTRPxFZ5Edh29r0VdHqp-FQTc4SezGQQVsJ_n7qomFCtvt8ezmuXPLjbqik_N7QONw81M7WbQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280628227"}
+17:57:08.765 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA2MjgyMjYsImV4cCI6MTYyOTg4NTQyOH0.tKc7FRwEb7JFJZTRPxFZ5Edh29r0VdHqp-FQTc4SezGQQVsJ_n7qomFCtvt8ezmuXPLjbqik_N7QONw81M7WbQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280628227"}
+17:57:08.765 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA2MjgyMjYsImV4cCI6MTYyOTg4NTQyOH0.tKc7FRwEb7JFJZTRPxFZ5Edh29r0VdHqp-FQTc4SezGQQVsJ_n7qomFCtvt8ezmuXPLjbqik_N7QONw81M7WbQ"}
+17:57:08.765 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA2MjgyMjYsImV4cCI6MTYyOTg4NTQyOH0.tKc7FRwEb7JFJZTRPxFZ5Edh29r0VdHqp-FQTc4SezGQQVsJ_n7qomFCtvt8ezmuXPLjbqik_N7QONw81M7WbQ
+17:57:08.776 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.carbontest.APIServer.BaseLoginTest], using SpringBootContextLoader
+17:57:08.776 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.carbontest.APIServer.BaseLoginTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:57:08.777 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.carbontest.APIServer.BaseLoginTest]: BaseLoginTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:57:08.781 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.carbontest.APIServer.APIServiceApplication for test class com.carbontest.APIServer.BaseLoginTest
+17:57:08.783 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4d3c6593, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7426a448, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@516462cc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3456558]
+17:57:08.783 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 准备开始---------
+17:57:08.783 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+17:57:08.787 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+17:57:08.787 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+17:57:08.787 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","code":null,"password":"123456"}
+17:57:08.911 [main] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+17:57:08.912 [main] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629280628399","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA2MjgzOTcsImV4cCI6MTYyOTg4NTQyOH0.bdKi6bRqvQxnJ4jestKTceXnznApRdRFfItuyEPWjw7Xz22e96WvW4k7YlwOQPnwk8q1RZVcFLqJJJPsoofSVQ"},"path":null}
+17:57:08.912 [main] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+17:57:08.912 [main] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 09:57:08 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+17:57:08.912 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA2MjgzOTcsImV4cCI6MTYyOTg4NTQyOH0.bdKi6bRqvQxnJ4jestKTceXnznApRdRFfItuyEPWjw7Xz22e96WvW4k7YlwOQPnwk8q1RZVcFLqJJJPsoofSVQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280628399"}
+17:57:08.912 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA2MjgzOTcsImV4cCI6MTYyOTg4NTQyOH0.bdKi6bRqvQxnJ4jestKTceXnznApRdRFfItuyEPWjw7Xz22e96WvW4k7YlwOQPnwk8q1RZVcFLqJJJPsoofSVQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280628399"}
+17:57:08.912 [main] INFO  c.carbontest.APIServer.BaseLoginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA2MjgzOTcsImV4cCI6MTYyOTg4NTQyOH0.bdKi6bRqvQxnJ4jestKTceXnznApRdRFfItuyEPWjw7Xz22e96WvW4k7YlwOQPnwk8q1RZVcFLqJJJPsoofSVQ"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280628399"}
+17:57:08.912 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA2MjgzOTcsImV4cCI6MTYyOTg4NTQyOH0.bdKi6bRqvQxnJ4jestKTceXnznApRdRFfItuyEPWjw7Xz22e96WvW4k7YlwOQPnwk8q1RZVcFLqJJJPsoofSVQ"}
+17:57:08.912 [main] INFO  c.carbontest.APIServer.BaseLoginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA2MjgzOTcsImV4cCI6MTYyOTg4NTQyOH0.bdKi6bRqvQxnJ4jestKTceXnznApRdRFfItuyEPWjw7Xz22e96WvW4k7YlwOQPnwk8q1RZVcFLqJJJPsoofSVQ
+17:57:09.243 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+18:00:31.492 [main] INFO  c.c.APIServer.User.loginTest - Starting loginTest on DESKTOP-K3J1M0C with PID 22376 (F:\code\javacode\Carbontest\target\test-classes started by wing in F:\code\javacode\Carbontest)
+18:00:31.493 [main] DEBUG c.c.APIServer.User.loginTest - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+18:00:31.495 [main] INFO  c.c.APIServer.User.loginTest - No active profile set, falling back to default profiles: default
+18:00:32.578 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+18:00:32.584 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+18:00:32.586 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+18:00:32.588 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+18:00:32.589 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+18:00:32.591 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+18:00:32.592 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+18:00:32.594 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+18:00:32.595 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+18:00:32.596 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+18:00:32.597 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+18:00:33.510 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+18:00:34.511 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+18:00:34.618 [main] INFO  c.c.APIServer.User.loginTest - Started loginTest in 3.497 seconds (JVM running for 5.062)
+18:00:34.736 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 准备开始---------
+18:00:34.838 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+18:00:34.838 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+18:00:34.843 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","password":"123456"}
+18:00:35.014 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+18:00:35.014 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629280834491","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA4MzQ0OTAsImV4cCI6MTYyOTg4NTYzNH0.vBEDPclMB1hDVt1DX35-Z_mplvZHuK5lFzQuPazLHkHemV70LuCbtdr6A7lzYDRZIAYyiHU0k1npFbAqm4bDYw"},"path":null}
+18:00:35.014 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+18:00:35.014 [TestNG-method=logintest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 10:00:34 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+18:00:35.024 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA4MzQ0OTAsImV4cCI6MTYyOTg4NTYzNH0.vBEDPclMB1hDVt1DX35-Z_mplvZHuK5lFzQuPazLHkHemV70LuCbtdr6A7lzYDRZIAYyiHU0k1npFbAqm4bDYw"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280834491"}
+18:00:35.026 [TestNG-method=logintest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA4MzQ0OTAsImV4cCI6MTYyOTg4NTYzNH0.vBEDPclMB1hDVt1DX35-Z_mplvZHuK5lFzQuPazLHkHemV70LuCbtdr6A7lzYDRZIAYyiHU0k1npFbAqm4bDYw"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280834491"}
+18:00:35.026 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA4MzQ0OTAsImV4cCI6MTYyOTg4NTYzNH0.vBEDPclMB1hDVt1DX35-Z_mplvZHuK5lFzQuPazLHkHemV70LuCbtdr6A7lzYDRZIAYyiHU0k1npFbAqm4bDYw"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280834491"}
+18:00:35.026 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA4MzQ0OTAsImV4cCI6MTYyOTg4NTYzNH0.vBEDPclMB1hDVt1DX35-Z_mplvZHuK5lFzQuPazLHkHemV70LuCbtdr6A7lzYDRZIAYyiHU0k1npFbAqm4bDYw"}
+18:00:35.026 [TestNG-method=logintest-1] INFO  c.c.APIServer.User.loginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA4MzQ0OTAsImV4cCI6MTYyOTg4NTYzNH0.vBEDPclMB1hDVt1DX35-Z_mplvZHuK5lFzQuPazLHkHemV70LuCbtdr6A7lzYDRZIAYyiHU0k1npFbAqm4bDYw
+18:00:35.034 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.carbontest.APIServer.BaseLoginTest], using SpringBootContextLoader
+18:00:35.035 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.carbontest.APIServer.BaseLoginTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:00:35.035 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.carbontest.APIServer.BaseLoginTest]: BaseLoginTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:00:35.039 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.carbontest.APIServer.APIServiceApplication for test class com.carbontest.APIServer.BaseLoginTest
+18:00:35.041 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@575e572f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@58015e56, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4d3c6593, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7426a448]
+18:00:35.041 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 准备开始---------
+18:00:35.041 [main] INFO  c.c.APIServer.Utils.EnvironmentUtil - 测试环境域名：http://10.53.3.62:8888
+18:00:35.044 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/user/login
+18:00:35.044 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+18:00:35.044 [main] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"username":"17826830021","code":null,"password":"123456"}
+18:00:35.171 [main] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+18:00:35.171 [main] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":200,"error":"Access.success.general","message":"操作成功","timestamp":"1629280834655","data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA4MzQ2NTQsImV4cCI6MTYyOTg4NTYzNH0.wlQ0dexqgNjR4u4VGwT5skhcyfLjj4mxeDZ86DGVziatu9vVIoV_-5ocqpueL7DxRkK3P1YZsBWXkhySg3zbzA"},"path":null}
+18:00:35.171 [main] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+18:00:35.172 [main] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 10:00:34 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+18:00:35.172 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA4MzQ2NTQsImV4cCI6MTYyOTg4NTYzNH0.wlQ0dexqgNjR4u4VGwT5skhcyfLjj4mxeDZ86DGVziatu9vVIoV_-5ocqpueL7DxRkK3P1YZsBWXkhySg3zbzA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280834655"}
+18:00:35.173 [main] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA4MzQ2NTQsImV4cCI6MTYyOTg4NTYzNH0.wlQ0dexqgNjR4u4VGwT5skhcyfLjj4mxeDZ86DGVziatu9vVIoV_-5ocqpueL7DxRkK3P1YZsBWXkhySg3zbzA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280834655"}
+18:00:35.174 [main] INFO  c.carbontest.APIServer.BaseLoginTest - {"data":{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA4MzQ2NTQsImV4cCI6MTYyOTg4NTYzNH0.wlQ0dexqgNjR4u4VGwT5skhcyfLjj4mxeDZ86DGVziatu9vVIoV_-5ocqpueL7DxRkK3P1YZsBWXkhySg3zbzA"},"error":"Access.success.general","message":"操作成功","status":200,"timestamp":"1629280834655"}
+18:00:35.174 [main] INFO  c.carbontest.APIServer.BaseLoginTest - 此处为返回的data:{"tokenHead":"Bearer ","token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA4MzQ2NTQsImV4cCI6MTYyOTg4NTYzNH0.wlQ0dexqgNjR4u4VGwT5skhcyfLjj4mxeDZ86DGVziatu9vVIoV_-5ocqpueL7DxRkK3P1YZsBWXkhySg3zbzA"}
+18:00:35.174 [main] INFO  c.carbontest.APIServer.BaseLoginTest - token:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxNzgyNjgzMDAyMSIsImNyZWF0ZWQiOjE2MjkyODA4MzQ2NTQsImV4cCI6MTYyOTg4NTYzNH0.wlQ0dexqgNjR4u4VGwT5skhcyfLjj4mxeDZ86DGVziatu9vVIoV_-5ocqpueL7DxRkK3P1YZsBWXkhySg3zbzA
+18:00:35.199 [TestNG-method=accountRegiesterTest-1] INFO  c.c.A.Company.accountRegiesterTest - 开始执行---------
+18:00:35.200 [TestNG-method=accountRegiesterTest-1] INFO  c.c.A.Company.accountRegiesterTest - 准备开始---------
+18:00:35.208 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求路径：：：http://10.53.3.62:8888/api/company/registered
+18:00:35.209 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 这里是请求header：：：
+18:00:35.209 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.HttprequestUtil - 此处是请求参数：：：：{"address":"日落大道0000","businessLicense":"https://uat-1252418820.cos.ap-nanjing.myqcloud.com/1627366715691/5MB%E5%A4%A7%E5%B0%8F%E7%9A%84%E5%9B%BE%E7%89%87.jpg","companyName":"服务商公司0000","contact":"8008208822","legalPerson":"法人0000","legalPersonIdCard":"340828199401076700","mail":"test0000@qq.com","phone":"17826830021","servicerId":"182988718825676800","socialCreditCode":"creditcode00000000"}
+18:00:35.231 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回的状态码statusCode:200
+18:00:35.231 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回内容responseContent:{"status":400,"error":"Access.failure.general","message":"获取用户信息异常","timestamp":"1629280834717","data":null,"path":null}
+18:00:35.231 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回cookies:[]
+18:00:35.231 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Bean.common.Response - 返回headers:[Vary: Origin, Vary: Access-Control-Request-Method, Vary: Access-Control-Request-Headers, X-Content-Type-Options: nosniff, X-XSS-Protection: 1; mode=block, Cache-Control: no-cache, no-store, max-age=0, must-revalidate, Pragma: no-cache, Expires: 0, X-Frame-Options: DENY, Content-Type: application/json;charset=utf-8, Transfer-Encoding: chunked, Date: Wed, 18 Aug 2021 10:00:34 GMT, Keep-Alive: timeout=60, Connection: keep-alive]
+18:00:35.232 [TestNG-method=accountRegiesterTest-1] INFO  c.c.APIServer.Utils.JsonUtil - 转换结果:{"error":"Access.failure.general","message":"获取用户信息异常","status":400,"timestamp":"1629280834717"}
+18:00:35.234 [main] INFO  c.c.A.Company.accountRegiesterTest - 请求放置的公司id：null
+18:00:35.527 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

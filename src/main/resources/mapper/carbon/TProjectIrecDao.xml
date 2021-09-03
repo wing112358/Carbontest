@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.carbontest.APIServer.dao.carbon.TProjectIrecDao">
+
+    <resultMap id="BaseResultMap" type="com.carbontest.APIServer.entity.TProjectIrec">
+        <!--@Table t_project_irec-->
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="projectId" column="project_id" jdbcType="INTEGER"/>
+        <result property="projectConnectionTime" column="project_connection_time" jdbcType="TIMESTAMP"/>
+        <result property="declarationFile" column="declaration_file" jdbcType="VARCHAR"/>
+        <result property="electricityFile" column="electricity_file" jdbcType="VARCHAR"/>
+        <result property="wiringDiagram" column="wiring_diagram" jdbcType="VARCHAR"/>
+        <result property="contract" column="contract" jdbcType="VARCHAR"/>
+        <result property="picture" column="picture" jdbcType="VARCHAR"/>
+        <result property="declarationHash" column="declaration_hash" jdbcType="VARCHAR"/>
+        <result property="electricityHash" column="electricity_hash" jdbcType="VARCHAR"/>
+        <result property="wiringHash" column="wiring_hash" jdbcType="VARCHAR"/>
+        <result property="contractHash" column="contract_hash" jdbcType="VARCHAR"/>
+        <result property="pictureHash" column="picture_hash" jdbcType="VARCHAR"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+        <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!--查询单个-->
+    <select id="queryById" resultMap="BaseResultMap">
+        select
+          id, project_id, project_connection_time, declaration_file, electricity_file, wiring_diagram, contract, picture, declaration_hash, electricity_hash, wiring_hash, contract_hash, picture_hash, create_time, update_time
+        from carbon_test.t_project_irec
+        where id = #{id}
+    </select>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          id, project_id, project_connection_time, declaration_file, electricity_file, wiring_diagram, contract, picture, declaration_hash, electricity_hash, wiring_hash, contract_hash, picture_hash, create_time, update_time
+        from carbon_test.t_project_irec
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryAll" resultMap="BaseResultMap">
+        select
+          id, project_id, project_connection_time, declaration_file, electricity_file, wiring_diagram, contract, picture, declaration_hash, electricity_hash, wiring_hash, contract_hash, picture_hash, create_time, update_time
+        from carbon_test.t_project_irec
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="projectId != null">
+                and project_id = #{projectId}
+            </if>
+            <if test="projectConnectionTime != null">
+                and project_connection_time = #{projectConnectionTime}
+            </if>
+            <if test="declarationFile != null and declarationFile != ''">
+                and declaration_file = #{declarationFile}
+            </if>
+            <if test="electricityFile != null and electricityFile != ''">
+                and electricity_file = #{electricityFile}
+            </if>
+            <if test="wiringDiagram != null and wiringDiagram != ''">
+                and wiring_diagram = #{wiringDiagram}
+            </if>
+            <if test="contract != null and contract != ''">
+                and contract = #{contract}
+            </if>
+            <if test="picture != null and picture != ''">
+                and picture = #{picture}
+            </if>
+            <if test="declarationHash != null and declarationHash != ''">
+                and declaration_hash = #{declarationHash}
+            </if>
+            <if test="electricityHash != null and electricityHash != ''">
+                and electricity_hash = #{electricityHash}
+            </if>
+            <if test="wiringHash != null and wiringHash != ''">
+                and wiring_hash = #{wiringHash}
+            </if>
+            <if test="contractHash != null and contractHash != ''">
+                and contract_hash = #{contractHash}
+            </if>
+            <if test="pictureHash != null and pictureHash != ''">
+                and picture_hash = #{pictureHash}
+            </if>
+            <if test="createTime != null">
+                and create_time = #{createTime}
+            </if>
+            <if test="updateTime != null">
+                and update_time = #{updateTime}
+            </if>
+        </where>
+    </select>
+
+    <!--新增所有列-->
+    <insert id="insert" keyProperty="id" useGeneratedKeys="true">
+        insert into carbon_test.t_project_irec(project_id, project_connection_time, declaration_file, electricity_file, wiring_diagram, contract, picture, declaration_hash, electricity_hash, wiring_hash, contract_hash, picture_hash, create_time, update_time)
+        values (#{projectId}, #{projectConnectionTime}, #{declarationFile}, #{electricityFile}, #{wiringDiagram}, #{contract}, #{picture}, #{declarationHash}, #{electricityHash}, #{wiringHash}, #{contractHash}, #{pictureHash}, #{createTime}, #{updateTime})
+    </insert>
+
+    <!--通过主键修改数据-->
+    <update id="update">
+        update carbon_test.t_project_irec
+        <set>
+            <if test="projectId != null">
+                project_id = #{projectId},
+            </if>
+            <if test="projectConnectionTime != null">
+                project_connection_time = #{projectConnectionTime},
+            </if>
+            <if test="declarationFile != null and declarationFile != ''">
+                declaration_file = #{declarationFile},
+            </if>
+            <if test="electricityFile != null and electricityFile != ''">
+                electricity_file = #{electricityFile},
+            </if>
+            <if test="wiringDiagram != null and wiringDiagram != ''">
+                wiring_diagram = #{wiringDiagram},
+            </if>
+            <if test="contract != null and contract != ''">
+                contract = #{contract},
+            </if>
+            <if test="picture != null and picture != ''">
+                picture = #{picture},
+            </if>
+            <if test="declarationHash != null and declarationHash != ''">
+                declaration_hash = #{declarationHash},
+            </if>
+            <if test="electricityHash != null and electricityHash != ''">
+                electricity_hash = #{electricityHash},
+            </if>
+            <if test="wiringHash != null and wiringHash != ''">
+                wiring_hash = #{wiringHash},
+            </if>
+            <if test="contractHash != null and contractHash != ''">
+                contract_hash = #{contractHash},
+            </if>
+            <if test="pictureHash != null and pictureHash != ''">
+                picture_hash = #{pictureHash},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--通过主键删除-->
+    <delete id="deleteById">
+        delete from carbon_test.t_project_irec where id = #{id}
+    </delete>
+
+</mapper>
