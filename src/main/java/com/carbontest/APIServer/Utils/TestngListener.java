@@ -150,9 +150,9 @@ public class TestngListener implements IReporter {
             });
             treeSet.addAll(tests.getAllResults());
             for (ITestResult result : treeSet) {
-                String testname=result.getInstanceName();
+                String description=result.getMethod().getDescription();
                 Object[] parameters = result.getParameters();
-                String name="Method:"+testname+"/ params:";
+                String name="Method:"+description+"/ params:";
                 //如果有参数，则使用参数的toString组合代替报告中的name
                 for(Object param:parameters){
                     name+=param.toString();
@@ -162,7 +162,7 @@ public class TestngListener implements IReporter {
                         name= name.substring(0,99)+"...";
                     }
                 }else{
-                    name = testname+result.getMethod().getMethodName();
+                    name = description+result.getMethod().getMethodName();
                 }
                 if(extenttest==null){
                     test = extent.createTest(name);
